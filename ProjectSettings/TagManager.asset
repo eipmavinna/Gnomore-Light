@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Platform
   - 
   - 
   - 
@@ -49,6 +49,17 @@ TagManager:
     locked: 0
   - name: FrontTree
     uniqueID: 1210993073
+  - name: Distant
+    uniqueID: 732141545
+    locked: 0
+  - name: Background
+    uniqueID: 2750372595
+    locked: 0
+  - name: Terrain
+    uniqueID: 2887300159
+    locked: 0
+  - name: Player
+    uniqueID: 78672317
     locked: 0
   m_RenderingLayers:
   - Default
