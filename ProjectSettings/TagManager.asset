@@ -45,11 +45,9 @@ TagManager:
   - name: BackgroundTree
     uniqueID: 4277929345
     locked: 0
-  - name: PlayerLayer
+  - name: Ladder
     uniqueID: 3125142535
     locked: 0
-  - name: FrontTree
-    uniqueID: 1210993073
   - name: Distant
     uniqueID: 732141545
     locked: 0
@@ -61,6 +59,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 78672317
+    locked: 0
+  - name: FrontTree
+    uniqueID: 1210993073
     locked: 0
   m_RenderingLayers:
   - Default

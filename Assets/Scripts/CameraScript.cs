@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraScript : MonoBehaviour
@@ -18,6 +19,9 @@ public class CameraScript : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = new Vector3(player.transform.position.x,0,-10);
+        //transform.position = new Vector3(player.transform.position.x,0,-10);
+        //^^ works for side-to-side levels, but when going up the tree it keeps the camera too low
+
+        transform.position = new Vector3(player.transform.position.x, player.transform.position.y, - 10);
     }
 }
