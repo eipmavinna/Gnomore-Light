@@ -24,7 +24,7 @@ public class HudManagerScript : MonoBehaviour
 
     public void OnBugFound(GameObject bug)
     {
-        Destroy(gameObject);
+        Destroy(bug);
         bugsCollected += 1;
         PlayerPrefs.SetInt("BugsCollected", bugsCollected);
         UpdateBugTracker();
@@ -32,6 +32,6 @@ public class HudManagerScript : MonoBehaviour
 
     void UpdateBugTracker()
     {
-        bugTracker.text = "Bugs Collected: " + bugsCollected + " / " + totalBugs;
+        bugTracker.text = "Bugs: " + bugsCollected + " / " + totalBugs;
     }
 }
