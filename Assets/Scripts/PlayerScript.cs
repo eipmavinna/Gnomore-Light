@@ -71,6 +71,14 @@ public class PlayerScript : MonoBehaviour
         _rbody.AddForce(Vector2.up * jumpStrength);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("MoleWall"))
+        {
+            //call destroy player 
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ladder"))

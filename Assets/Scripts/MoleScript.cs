@@ -58,20 +58,20 @@ public class MoleScript : MonoBehaviour
     }
 
     //TODO: Implement
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //if it's a moleWall, delete the box collider/deactivate
-        if (collision.gameObject.CompareTag("MoleWall"))
-        {
-            collision.gameObject.GetComponent<Collider2D>().enabled = false;
-        }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        //if moleWall, put box collider back
-        if (collision.gameObject.CompareTag("MoleWall"))
-        {
-            collision.gameObject.GetComponent<Collider2D>().enabled = true;
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    //if it's a moleWall, delete the box collider/deactivate
+    //    if (collision.gameObject.CompareTag("MoleWall"))
+    //    {
+    //        collision.gameObject.GetComponent<Collider2D>().enabled = false;
+    //    }
+    //}
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    //if moleWall, put box collider back
+    //    if (collision.gameObject.CompareTag("MoleWall"))
+    //    {
+    //        collision.gameObject.GetComponent<Collider2D>().enabled = true;
+    //    }
+    //}
 }
