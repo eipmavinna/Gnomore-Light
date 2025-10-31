@@ -46,18 +46,13 @@ public class PlayerScript : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Bug"))
-        {
-            _hudManager.OnBugFound(collision.gameObject);
-        }
-    }
-
     private void FixedUpdate()
     {
         _rbody.linearVelocityX = horizontalDirection * moveSpeed;
-        _rbody.linearVelocityY = verticalDirection * moveSpeed;
+        if (verticalMove.enabled)
+        {
+            _rbody.linearVelocityY = verticalDirection * moveSpeed;
+        }
     }
 
     void OnMove(InputValue value)
