@@ -180,8 +180,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee35edeb7064e954fb1edb1fd1b2d9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  jumpStrength: 200
-  moveSpeed: 3
+  moveSpeed: 4
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  fallAllowance: 0.2
+  jumpForce: 600
 --- !u!114 &8645795703756106773
 MonoBehaviour:
   m_ObjectHideFlags: 0

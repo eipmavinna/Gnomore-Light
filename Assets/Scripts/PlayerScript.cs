@@ -150,7 +150,7 @@ public class PlayerScript : MonoBehaviour
         {
             _rbody.gravityScale = 4;
             verticalMove.Enable();
-            jump.Disable();
+            //jump.Disable();
         }
     }
 
@@ -160,7 +160,7 @@ public class PlayerScript : MonoBehaviour
         {
             _rbody.gravityScale = initialGScale;
             verticalMove.Disable();
-            jump.Enable();
+            //jump.Enable();
         }
     }
 
