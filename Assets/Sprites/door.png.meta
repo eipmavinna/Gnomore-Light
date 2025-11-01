@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: be8d4f0c2e5a56d4c805944593880f37
+guid: 5fcfbf070eea59d44940e52de5ccc20f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5099660971488273980
-    second: dark tree_0
+      213: -7341407202210888751
+    second: door_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dark tree_0
+      name: door_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 17
-        width: 1059
-        height: 828
+        x: 21
+        y: 9
+        width: 461
+        height: 599
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c994879d5d5a39b0800000000000000
-      internalID: -5099660971488273980
+      spriteID: 1d3c9b8cb051e1a90800000000000000
+      internalID: -7341407202210888751
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dark tree_0: -5099660971488273980
+      door_0: -7341407202210888751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

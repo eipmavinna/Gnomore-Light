@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheWoodsScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/TreeScene.unity
+    guid: c999cdbab09267748a285c04792fa1f6
+  - enabled: 1
+    path: Assets/Scenes/MoleHoleScene.unity
+    guid: 2095bf45d81404140a64b832eeacb596
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 031251d7d298eda43b1433cbec504ff8
+  - enabled: 1
+    path: Assets/Scenes/MapScene.unity
+    guid: e669294982dc16f40a51b87f54082faf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
