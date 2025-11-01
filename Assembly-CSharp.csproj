@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\HudManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\MoleScript.cs" />
+    <Compile Include="Assets\Scripts\BugScript.cs" />
+    <Compile Include="Assets\Scripts\SquirrelScript.cs" />
     <Compile Include="Assets\Scripts\MoleHoleSceneManagerScript.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
   </ItemGroup>
