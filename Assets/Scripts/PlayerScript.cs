@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerScript : MonoBehaviour
 {
-    public float jumpStrength;
+    //public float jumpStrength;
     public float moveSpeed;
     float horizontalDirection = 0;
     float verticalDirection = 0;
@@ -16,8 +16,15 @@ public class PlayerScript : MonoBehaviour
 
     private PlayerInput playerInput;
     private InputAction verticalMove;
+    private InputAction jump;
+    public LayerMask groundLayers;
 
-
+    float lastTimeGrounded = 0;
+    float jumpCooldown;
+    float lastTimeJumped = 0;
+    float jumpsLeft = 1;
+    public float fallAllowance;
+    public float jumpForce;
 
     Rigidbody2D _rbody;
     HudManagerScript _hudManager;
@@ -31,25 +38,42 @@ public class PlayerScript : MonoBehaviour
 
         playerInput = GetComponent<PlayerInput>();
         verticalMove = playerInput.actions["VerticalMove"];
+        jump = playerInput.actions["Jump"];
+        jumpCooldown = fallAllowance;
+
 
         sceneName = SceneManager.GetActiveScene().name;
         if(sceneName != "MoleHoleScene") //or the rabbit hole scene
         {
             verticalMove.Disable();
         }
-        _hudManager = FindAnyObjectByType<HudManagerScript>();
+        else
+        {
+            //if in a top-down level, player shouldn't be able to jump
+            jump.Disable();
+        }
+            _hudManager = FindAnyObjectByType<HudManagerScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (IsGrounded())
+        {
+            lastTimeGrounded = Time.time;
+            jumpsLeft = 1;
+            Debug.Log("is grounded");
+        }
+        else
+        {
+            Debug.Log("not grounded");
+        }
     }
 
     private void FixedUpdate()
     {
         _rbody.linearVelocityX = horizontalDirection * moveSpeed;
-        if (verticalMove.enabled)
+        if(verticalMove.enabled)
         {
             _rbody.linearVelocityY = verticalDirection * moveSpeed;
         }
@@ -68,16 +92,52 @@ public class PlayerScript : MonoBehaviour
         verticalDirection = direction;
     }
 
-    //with the ladders, set gravity lower when on them? and disable the up action when off?
-    //in fixed update could check for on ladder
+    
 
-    void OnJump(InputValue value)
+    void OnJump(InputValue button)
     {
-        _rbody.AddForce(Vector2.up * jumpStrength);
+        if (button.isPressed)
+        {
+            if (jumpsLeft > 0 || (WasGrounded() && (Time.time - lastTimeJumped > jumpCooldown)))
+            {
+                _rbody.AddForce(Vector2.up * jumpForce);
+                lastTimeJumped = Time.time;
+                jumpsLeft -= 1;
+
+            }
+        }
+        else if (_rbody.linearVelocityY > 0) //not been pressed 
+        {
+            _rbody.linearVelocity = _rbody.linearVelocity * 0.1f;   //kills upward velocity
+        }
+
+    }
+    private bool WasGrounded()
+    {
+        //is the difference from now and last time grounded insignificant
+        return (Time.time - lastTimeGrounded <= fallAllowance);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    //checks if the player is touching the ground in order to determine if the player can jump
+    private bool IsGrounded()
     {
+        Vector3 pos = transform.position;
+        RaycastHit2D hit1 = Physics2D.Raycast(new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z), Vector2.down, 1f, groundLayers);  //add or subtract half a unit to check both sides of the player
+        RaycastHit2D hit2 = Physics2D.Raycast(new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), Vector2.down, 1f, groundLayers);
+        RaycastHit2D hit3 = Physics2D.Raycast(transform.position, Vector2.down, 0.5f, groundLayers);
+        //lastTimeJumped = 0;
+        return (hit3.collider != null || hit2.collider != null || hit1.collider != null);
+    }
+
+
+
+
+    private void OnTriggerEnter2D(Collider2D collision)         
+    {
+        if (collision.gameObject.CompareTag("Bug"))
+        {
+            _hudManager.OnBugFound(collision.gameObject);
+        }
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("MoleWall"))
         {
             //call destroy player 
@@ -90,6 +150,7 @@ public class PlayerScript : MonoBehaviour
         {
             _rbody.gravityScale = 4;
             verticalMove.Enable();
+            jump.Disable();
         }
     }
 
@@ -99,6 +160,7 @@ public class PlayerScript : MonoBehaviour
         {
             _rbody.gravityScale = initialGScale;
             verticalMove.Disable();
+            jump.Enable();
         }
     }
 

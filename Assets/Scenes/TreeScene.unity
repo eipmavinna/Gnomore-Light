@@ -201,9 +201,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2102666301615461625, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4826417328139668341, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: m_GravityScale
-      value: 18
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458740666109418462, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458740666109418462, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5458740666109418462, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -246,8 +258,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: jumpForce
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: jumpStrength
-      value: 3000
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: fallAllowance
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: playerActions
@@ -256,6 +280,10 @@ PrefabInstance:
     - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: VerticalMove.m_Name
       value: Vertical Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: groundLayers.m_Bits
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: verticalMove.m_Name
@@ -385,7 +413,7 @@ GameObject:
   - component: {fileID: 110502573}
   - component: {fileID: 110502575}
   - component: {fileID: 110502574}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +701,7 @@ GameObject:
   - component: {fileID: 152695012}
   - component: {fileID: 152695014}
   - component: {fileID: 152695013}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LowerBranchCollider_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,7 +1117,7 @@ GameObject:
   - component: {fileID: 296213692}
   - component: {fileID: 296213694}
   - component: {fileID: 296213693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1370,7 +1398,7 @@ GameObject:
   - component: {fileID: 757561095}
   - component: {fileID: 757561097}
   - component: {fileID: 757561096}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1507,7 +1535,7 @@ GameObject:
   - component: {fileID: 810822304}
   - component: {fileID: 810822306}
   - component: {fileID: 810822305}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1714,7 +1742,7 @@ GameObject:
   - component: {fileID: 928463741}
   - component: {fileID: 928463743}
   - component: {fileID: 928463742}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftBranchCollider_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1986,7 +2014,7 @@ GameObject:
   - component: {fileID: 947630763}
   - component: {fileID: 947630765}
   - component: {fileID: 947630764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2193,7 +2221,7 @@ GameObject:
   - component: {fileID: 1241884053}
   - component: {fileID: 1241884055}
   - component: {fileID: 1241884054}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2330,7 +2358,7 @@ GameObject:
   - component: {fileID: 1352204552}
   - component: {fileID: 1352204554}
   - component: {fileID: 1352204553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightBranchCollider_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2563,7 +2591,7 @@ GameObject:
   - component: {fileID: 1445869003}
   - component: {fileID: 1445869005}
   - component: {fileID: 1445869004}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2700,7 +2728,7 @@ GameObject:
   - component: {fileID: 1709767276}
   - component: {fileID: 1709767278}
   - component: {fileID: 1709767277}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
