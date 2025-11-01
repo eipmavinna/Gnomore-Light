@@ -917,8 +917,8 @@ Transform:
   m_GameObject: {fileID: 1314566362}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.1162, y: -4.4607, z: 0}
-  m_LocalScale: {x: 15.95981, y: 2.1929, z: 1}
+  m_LocalPosition: {x: 11.1162, y: -6.9395, z: 0}
+  m_LocalScale: {x: 15.95981, y: 7.1503887, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1201,6 +1201,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8035126694444925980, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: jumpStrength
+      value: 600
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1316,6 +1320,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4124289764859383218, guid: 4ed0b7aee92ee414f997c30474b3fdfd, type: 3}
+      propertyPath: id
+      value: WoodsCave
+      objectReference: {fileID: 0}
     - target: {fileID: 6990049630444374784, guid: 4ed0b7aee92ee414f997c30474b3fdfd, type: 3}
       propertyPath: m_Name
       value: Bug
