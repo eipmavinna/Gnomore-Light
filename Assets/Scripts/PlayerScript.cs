@@ -26,6 +26,8 @@ public class PlayerScript : MonoBehaviour
     public float fallAllowance;
     public float jumpForce;
 
+    string buttonName;
+
     Rigidbody2D _rbody;
     HudManagerScript _hudManager;
 
@@ -34,7 +36,7 @@ public class PlayerScript : MonoBehaviour
     {
         _rbody = GetComponent<Rigidbody2D>();
         initialGScale = _rbody.gravityScale;  //taking the initial gravity scale so it can be edited freely in the unity editor instead of changing once the player leaves a ladder
-        Debug.Log(initialGScale);
+        //Debug.Log(initialGScale);
 
         playerInput = GetComponent<PlayerInput>();
         verticalMove = playerInput.actions["VerticalMove"];
@@ -61,13 +63,10 @@ public class PlayerScript : MonoBehaviour
         if (IsGrounded())
         {
             lastTimeGrounded = Time.time;
-            jumpsLeft = 1;
-            Debug.Log("is grounded");
+            jumpsLeft = 0;
+            //Debug.Log("is grounded");
         }
-        else
-        {
-            Debug.Log("not grounded");
-        }
+        
     }
 
     private void FixedUpdate()
@@ -130,18 +129,33 @@ public class PlayerScript : MonoBehaviour
     }
 
 
-
+    
+    private void OnInteract(InputValue value)
+    {
+        Debug.Log("interacted");
+        if(buttonName != null)
+        {
+            SceneManager.LoadScene(buttonName);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)         
     {
-        if (collision.gameObject.CompareTag("Bug"))
-        {
-            _hudManager.OnBugFound(collision.gameObject);
-        }
+        
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("MoleWall"))
         {
             //call destroy player 
         }
+        else if (collision.gameObject.CompareTag("Bug"))
+        {
+            _hudManager.OnBugFound(collision.gameObject);
+        }
+        else if (collision.gameObject.CompareTag("button"))
+        {
+            buttonName = collision.gameObject.name;
+            Debug.Log(buttonName);
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -152,6 +166,7 @@ public class PlayerScript : MonoBehaviour
             verticalMove.Enable();
             //jump.Disable();
         }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -161,6 +176,11 @@ public class PlayerScript : MonoBehaviour
             _rbody.gravityScale = initialGScale;
             verticalMove.Disable();
             //jump.Enable();
+        }
+        else if (collision.gameObject.CompareTag("button"))
+        {
+            buttonName = null;
+            Debug.Log("null");
         }
     }
 
