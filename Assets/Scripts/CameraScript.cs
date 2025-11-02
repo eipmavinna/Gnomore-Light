@@ -5,17 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class CameraScript : MonoBehaviour
 {
-    bool isTreeScene = false;
+    string sceneName;
     public GameObject player;
+
+    public float offset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-        if (SceneManager.GetActiveScene().name == "TreeScene")
-        {
-            isTreeScene = true;
-        }
-
+        sceneName = SceneManager.GetActiveScene().name;
+        
 
     }
 
@@ -29,20 +28,25 @@ public class CameraScript : MonoBehaviour
     {
         //transform.position = new Vector3(player.transform.position.x,0,-10);
         //^^ works for side-to-side levels, but when going up the tree it keeps the camera too low
-        
-        //if (isTreeScene)
-        //{
-        //    float pY = player.transform.position.y;
-        //    if (pY < -8)
-        //    {
-        //        transform.position = new Vector3(player.transform.position.x, -8, -10);
-        //    }
-        //}
-        //else
-        //{
-        //    transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
-        //}
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+
+        if (sceneName == "TreeScene" && player.transform.position.y < -8)
+        {
+            //float pY = player.transform.position.y;
+            //if (pY < -8)
+            //{
+            transform.position = new Vector3(player.transform.position.x, -8, -10);
+            //}
+        }
+        else if (sceneName == "TheWoodsScene")
+        {
+            //Debug.Log("woods scene");
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y + offset, -10);
+        }
+        else
+        {
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+
+        }
 
     }
 }

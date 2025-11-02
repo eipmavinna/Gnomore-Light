@@ -101,7 +101,7 @@ public class PlayerScript : MonoBehaviour
             {
                 _rbody.AddForce(Vector2.up * jumpForce);
                 lastTimeJumped = Time.time;
-                jumpsLeft -= 1;
+                jumpsLeft -= 0;
 
             }
         }
