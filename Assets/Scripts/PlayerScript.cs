@@ -184,5 +184,13 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    public void LockMovement()
+    {
+        //_rbody.gravityScale = 0;
+        InputAction move = playerInput.actions["Move"];
+        move.Disable();
+        jump.Disable();
+        
+    }
 
 }

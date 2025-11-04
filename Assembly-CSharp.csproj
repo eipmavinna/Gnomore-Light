@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\TitleSceneManagerScript.cs" />
     <Compile Include="Assets\Scripts\ButtonScript.cs" />
+    <Compile Include="Assets\Scripts\BoatScript.cs" />
     <Compile Include="Assets\Scripts\HudManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\MoleScript.cs" />
