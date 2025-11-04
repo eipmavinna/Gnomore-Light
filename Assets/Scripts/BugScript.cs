@@ -10,6 +10,7 @@ public class BugScript : MonoBehaviour
     {
         hudManager = FindAnyObjectByType<HudManagerScript>();
         int collected = PlayerPrefs.GetInt(id, 0);
+        PlayerPrefs.SetString("BugsLoaded", PlayerPrefs.GetString("BugsLoaded", "") + id + ";");
         if (collected != 0)
         {
             Destroy(gameObject);
