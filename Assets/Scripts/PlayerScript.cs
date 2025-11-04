@@ -54,8 +54,6 @@ public class PlayerScript : MonoBehaviour
             //if in a top-down level, player shouldn't be able to jump
             jump.Disable();
         }
-        
-        _hudManager = FindAnyObjectByType<HudManagerScript>();
     }
 
     //Restore the player's last known position in the current scene
@@ -166,10 +164,6 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("MoleWall"))
         {
             //call destroy player 
-        }
-        else if (collision.gameObject.CompareTag("Bug"))
-        {
-            _hudManager.OnBugFound(collision.gameObject);
         }
         else if (collision.gameObject.CompareTag("button"))
         {
