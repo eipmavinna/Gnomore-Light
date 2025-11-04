@@ -54,7 +54,24 @@ public class PlayerScript : MonoBehaviour
             //if in a top-down level, player shouldn't be able to jump
             jump.Disable();
         }
-            _hudManager = FindAnyObjectByType<HudManagerScript>();
+        
+        _hudManager = FindAnyObjectByType<HudManagerScript>();
+    }
+
+    //Restore the player's last known position in the current scene
+    public void RestorePosition()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+        float loadX = PlayerPrefs.GetFloat(currentScene + "_PlayerX", transform.position.x);
+        float loadY = PlayerPrefs.GetFloat(currentScene + "_PlayerY", transform.position.y);
+        transform.position = new Vector3(loadX, loadY, transform.position.z);
+    }
+
+    public void SavePosition()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetFloat(currentScene + "_PlayerX", transform.position.x);
+        PlayerPrefs.SetFloat(currentScene + "_PlayerY", transform.position.y);
     }
 
     // Update is called once per frame
@@ -135,6 +152,10 @@ public class PlayerScript : MonoBehaviour
         Debug.Log("interacted");
         if(buttonName != null)
         {
+            //Remember player position before changing scenes
+            SavePosition();
+
+            //Load the scene
             SceneManager.LoadScene(buttonName);
         }
     }
