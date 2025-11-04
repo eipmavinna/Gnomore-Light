@@ -21,8 +21,8 @@ public class HudManagerScript : MonoBehaviour
         if (PlayerPrefs.GetInt("InLevel", 0) == 0)
         {
             PlayerPrefs.SetFloat("TimeRemaining", timeLimit);
+            PlayerPrefs.SetInt("InLevel", 1);
         }
-        PlayerPrefs.SetInt("InLevel", 1);
         bugsCollected = PlayerPrefs.GetInt("BugsCollected", 0);
         totalBugs = PlayerPrefs.GetInt("TotalBugs", 0);
         timeRemaining = PlayerPrefs.GetFloat("TimeRemaining", timeLimit);
