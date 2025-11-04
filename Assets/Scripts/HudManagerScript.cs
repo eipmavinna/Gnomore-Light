@@ -7,6 +7,8 @@ public class HudManagerScript : MonoBehaviour
     public GameObject timeTracker;
     public float timeLimit;
 
+    PlayerScript playerScript;
+
     int bugsCollected;
     int totalBugs;
     float timeRemaining;
@@ -15,6 +17,7 @@ public class HudManagerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerScript = FindAnyObjectByType<PlayerScript>();
         lastUpdateTime = Time.time;
         timeBarWidth = timeTracker.transform.localScale.x;
 
@@ -22,7 +25,11 @@ public class HudManagerScript : MonoBehaviour
         {
             PlayerPrefs.SetFloat("TimeRemaining", timeLimit);
             PlayerPrefs.SetInt("InLevel", 1);
+        } else
+        {
+            playerScript.RestorePosition();
         }
+        
         bugsCollected = PlayerPrefs.GetInt("BugsCollected", 0);
         totalBugs = PlayerPrefs.GetInt("TotalBugs", 0);
         timeRemaining = PlayerPrefs.GetFloat("TimeRemaining", timeLimit);
