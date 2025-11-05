@@ -29,12 +29,19 @@ public class CameraScript : MonoBehaviour
         //transform.position = new Vector3(player.transform.position.x,0,-10);
         //^^ works for side-to-side levels, but when going up the tree it keeps the camera too low
 
-        if (sceneName == "TreeScene" && player.transform.position.y < -8)
+        if (sceneName == "TreeScene")
         {
             //float pY = player.transform.position.y;
             //if (pY < -8)
             //{
-            transform.position = new Vector3(player.transform.position.x, -8, -10);
+            if(player.transform.position.y < -8)
+            {
+                transform.position = new Vector3(player.transform.position.x, -8, -10);
+            }
+            else
+            {
+                transform.position = new Vector3(player.transform.position.x, player.transform.position.y + offset, -10);
+            }
             //}
         }
         else if (sceneName == "TheWoodsScene")

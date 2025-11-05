@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\BoatScript.cs" />
     <Compile Include="Assets\Scripts\HudManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\MapSceneManagerScript.cs" />
     <Compile Include="Assets\Scripts\MoleScript.cs" />
     <Compile Include="Assets\Scripts\BugScript.cs" />
     <Compile Include="Assets\Scripts\SquirrelScript.cs" />
