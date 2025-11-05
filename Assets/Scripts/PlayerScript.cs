@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(PlayerInput))]
+[RequireComponent(typeof(ParticleSystem))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerScript : MonoBehaviour
 {
     //public float jumpStrength;
@@ -29,12 +32,16 @@ public class PlayerScript : MonoBehaviour
     string buttonName;
 
     Rigidbody2D _rbody;
+    SpriteRenderer _spriteRenderer;
+    ParticleSystem _deathParticles;
     HudManagerScript _hudManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rbody = GetComponent<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _deathParticles = GetComponent<ParticleSystem>();
         initialGScale = _rbody.gravityScale;  //taking the initial gravity scale so it can be edited freely in the unity editor instead of changing once the player leaves a ladder
         //Debug.Log(initialGScale);
 
@@ -122,7 +129,7 @@ public class PlayerScript : MonoBehaviour
         }
         else if (_rbody.linearVelocityY > 0) //not been pressed 
         {
-            _rbody.linearVelocity = _rbody.linearVelocity * 0.1f;   //kills upward velocity
+            _rbody.linearVelocity = _rbody.linearVelocity * 0.5f;   //kills upward velocity
         }
 
     }
@@ -163,7 +170,7 @@ public class PlayerScript : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("MoleWall"))
         {
-            //call destroy player 
+            Die();
         }
         else if (collision.gameObject.CompareTag("button"))
         {
@@ -199,5 +206,28 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    public void Die()
+    {
+        LockMovement();
+        _spriteRenderer.enabled = false;
+        _deathParticles.Play();
+        Invoke("ReturnToMap", 3f);
+    }
+
+    public void ReturnToMap()
+    {
+        SceneManager.LoadScene("MapScene");
+    }
+
+    public void LockMovement()
+    {
+        //_rbody.gravityScale = 0;
+        InputAction move = playerInput.actions["Move"];
+        move.Disable();
+        jump.Disable();
+        verticalMove.Disable();
+        horizontalDirection = 0;
+        verticalDirection = 0;
+    }
 
 }
