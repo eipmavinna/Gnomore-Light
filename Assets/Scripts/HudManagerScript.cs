@@ -57,6 +57,7 @@ public class HudManagerScript : MonoBehaviour
         if (timeRemaining <= 0)
         {
             timeRemaining = 0;
+            playerScript.Die();
         }
         lastUpdateTime = Time.time;
         PlayerPrefs.SetFloat("TimeRemaining", timeRemaining);
