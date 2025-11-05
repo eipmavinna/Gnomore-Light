@@ -405,4 +405,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HudManagerScript
   bugTracker: {fileID: 3374788463029788643}
   timeTracker: {fileID: 1690298643188856357}
-  timeLimit: 30
+  timeLimit: 180
