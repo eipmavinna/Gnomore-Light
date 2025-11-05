@@ -317,15 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5458740666109418462, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       value: -2.48
-=======
-      value: -5.03
->>>>>>> Stashed changes
-=======
-      value: -5.03
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5458740666109418462, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1194,11 +1186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraScript
   player: {fileID: 234368186}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
   offset: 1
 --- !u!1 &143325131
 GameObject:
@@ -1290,10 +1277,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &152695011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,9 +2773,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1407667137
   m_SortingLayer: 5
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8f1d7741067e88046bac670c14480d26, type: 3}
-  m_Color: {r: 0.61635214, g: 0.44854912, b: 0.27328813, a: 0.8156863}
+  m_SortingOrder: 100
+  m_Sprite: {fileID: -7341407202210888751, guid: 5fcfbf070eea59d44940e52de5ccc20f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -3622,25 +3605,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_SortingLayerID: 1210993073
-  m_SortingLayer: 7
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -7341407202210888751, guid: 5fcfbf070eea59d44940e52de5ccc20f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-=======
-=======
->>>>>>> Stashed changes
   m_SortingLayerID: -1407667137
   m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f1d7741067e88046bac670c14480d26, type: 3}
   m_Color: {r: 0.61635214, g: 0.44854912, b: 0.27328813, a: 0.8156863}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -10856,12 +10825,6 @@ SceneRoots:
   - {fileID: 581840874}
   - {fileID: 3849664463037861263}
   - {fileID: 1107935767}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: 2143572320}
-=======
-=======
->>>>>>> Stashed changes
   - {fileID: 1477759323}
   - {fileID: 579031109}
   - {fileID: 2081474140}
@@ -10876,7 +10839,4 @@ SceneRoots:
   - {fileID: 1960122628}
   - {fileID: 892277688}
   - {fileID: 1445731607}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
