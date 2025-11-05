@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal.Filters;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -29,10 +30,10 @@ public class BoatScript : MonoBehaviour
             //_rbody.AddForce(Vector2.right * speed);
             _rbody.linearVelocity = Vector2.right * speed;
         }
-        else
-        {
-            _rbody.linearVelocity = _rbody.linearVelocity.normalized * 3f;
-        }
+        //else
+        //{
+        //    _rbody.linearVelocity = _rbody.linearVelocity.normalized * 3f;
+        //}
         if (transform.position.x > finalX)
         {
             //SceneManager.LoadScene("MapScene");
@@ -42,6 +43,15 @@ public class BoatScript : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        int bugsCollected = PlayerPrefs.GetInt("BugsCollected", 0);
+        int totalBugs = PlayerPrefs.GetInt("TotalBugs", 0);
+        if (bugsCollected < totalBugs)
+        {
+            //TODO: display message
+            return;
+        }
+
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerScript player = collision.gameObject.GetComponent<PlayerScript>();
@@ -50,8 +60,14 @@ public class BoatScript : MonoBehaviour
             moving = true;
 
             Invoke("ChangeScene", 5);
-            //TODO: stop the timer so the day doesn't end while on the boat
+            //stop the timer so the day doesn't end while on the boat
+            PlayerPrefs.SetInt("InLevel", 0);
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        //TODO: Hide message
     }
 
     void ChangeScene()
