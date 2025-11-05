@@ -52,7 +52,13 @@ public class HudManagerScript : MonoBehaviour
 
     void UpdateTimeRemaining()
     {
-        float deltaTime = Time.time - lastUpdateTime;
+        //Do not update time if not in a level
+        if (PlayerPrefs.GetInt("InLevel", 0) == 0)
+        {
+            return;
+        }
+
+            float deltaTime = Time.time - lastUpdateTime;
         timeRemaining -= deltaTime;
         if (timeRemaining <= 0)
         {
