@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class BoatScript : MonoBehaviour
 {
     Rigidbody2D _rbody;
+    HudManagerScript _hudManager;
     //public Player player;
     public GameObject barrier;
 
@@ -19,7 +20,7 @@ public class BoatScript : MonoBehaviour
     void Start()
     {
         _rbody = GetComponent<Rigidbody2D>();
-        
+        _hudManager = FindAnyObjectByType<HudManagerScript>();
     }
 
     // Update is called once per frame
@@ -30,16 +31,7 @@ public class BoatScript : MonoBehaviour
             //_rbody.AddForce(Vector2.right * speed);
             _rbody.linearVelocity = Vector2.right * speed;
         }
-        //else
-        //{
-        //    _rbody.linearVelocity = _rbody.linearVelocity.normalized * 3f;
-        //}
-        if (transform.position.x > finalX)
-        {
-            //SceneManager.LoadScene("MapScene");
-            Debug.Log("loading next scene...");
-        }
-        
+                
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -59,20 +51,17 @@ public class BoatScript : MonoBehaviour
             Destroy(barrier);
             moving = true;
 
-            Invoke("ChangeScene", 5);
             //stop the timer so the day doesn't end while on the boat
             PlayerPrefs.SetInt("InLevel", 0);
+            _hudManager.DisplayLevelCompleteOverlay();
+
+            
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         //TODO: Hide message
-    }
-
-    void ChangeScene()
-    {
-        SceneManager.LoadScene("MapScene");
     }
 
 }

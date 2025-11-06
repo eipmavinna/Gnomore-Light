@@ -32,6 +32,7 @@ public class PlayerScript : MonoBehaviour
     string buttonName;
 
     Rigidbody2D _rbody;
+    BoxCollider2D _collider;
     SpriteRenderer _spriteRenderer;
     ParticleSystem _deathParticles;
     HudManagerScript _hudManager;
@@ -42,9 +43,11 @@ public class PlayerScript : MonoBehaviour
         _rbody = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _deathParticles = GetComponent<ParticleSystem>();
+        _collider = GetComponent<BoxCollider2D>();
         initialGScale = _rbody.gravityScale;  //taking the initial gravity scale so it can be edited freely in the unity editor instead of changing once the player leaves a ladder
         //Debug.Log(initialGScale);
 
+        _hudManager = FindAnyObjectByType<HudManagerScript>();
         playerInput = GetComponent<PlayerInput>();
         verticalMove = playerInput.actions["VerticalMove"];
         jump = playerInput.actions["Jump"];
@@ -169,7 +172,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Die();
+            Die(collision.gameObject.name);
         }
     }
 
@@ -178,7 +181,7 @@ public class PlayerScript : MonoBehaviour
         
         if (collision.gameObject.CompareTag("MoleWall"))
         {
-            Die();
+            Die("Wandered into a mole hole");
         }
         else if (collision.gameObject.CompareTag("button"))
         {
@@ -214,17 +217,13 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    public void Die()
+    public void Die(string reason)
     {
         LockMovement();
         _spriteRenderer.enabled = false;
+        _collider.enabled = false;
         _deathParticles.Play();
-        Invoke("ReturnToMap", 3f);
-    }
-
-    public void ReturnToMap()
-    {
-        SceneManager.LoadScene("MapScene");
+        _hudManager.DisplayDeathOverlay(reason);
     }
 
     public void LockMovement()

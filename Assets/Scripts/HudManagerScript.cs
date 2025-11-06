@@ -3,8 +3,17 @@ using UnityEngine;
 
 public class HudManagerScript : MonoBehaviour
 {
+
+    public Canvas gameOverlay;
     public TMP_Text bugTracker;
     public GameObject timeTracker;
+
+    public Canvas levelCompleteOverlay;
+    public TMP_Text levelCompleteText;
+    public TMP_Text deathMessageText;
+    public TMP_Text bugsCollectedText;
+    public TMP_Text timeRemainingText;
+
     public float timeLimit;
 
     PlayerScript playerScript;
@@ -17,6 +26,7 @@ public class HudManagerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        levelCompleteOverlay.gameObject.SetActive(false);
         playerScript = FindAnyObjectByType<PlayerScript>();
         lastUpdateTime = Time.time;
         timeBarWidth = timeTracker.transform.localScale.x;
@@ -42,6 +52,33 @@ public class HudManagerScript : MonoBehaviour
         UpdateTimeRemaining();
     }
 
+    public void DisplayLevelCompleteOverlay()
+    {
+        gameOverlay.gameObject.SetActive(false);
+        levelCompleteOverlay.gameObject.SetActive(true);
+
+        //TODO update time remaining and bugs collected
+        bugsCollectedText.text = "Bugs Collected: " + bugsCollected;
+        timeRemainingText.text = "Time Remaining: " + Mathf.CeilToInt(timeRemaining) + "s";
+        Invoke("ReturnToMap", 5f);
+    }
+
+    public void DisplayDeathOverlay(string message)
+    {
+        string[] deathMessages = { "You died!", "Wasted" };
+        int index = Random.Range(0, deathMessages.Length);
+
+        levelCompleteText.text = deathMessages[index];
+        levelCompleteText.color = new Color(0.6981132f, 0.059131f, 0);
+        deathMessageText.text = "Cause of Death: " + message;
+
+        DisplayLevelCompleteOverlay();
+    }
+    public void ReturnToMap()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MapScene");
+    }
+
     public void OnBugFound(GameObject bug)
     {
         Destroy(bug);
@@ -63,7 +100,7 @@ public class HudManagerScript : MonoBehaviour
         if (timeRemaining <= 0)
         {
             timeRemaining = 0;
-            playerScript.Die();
+            playerScript.Die("Darkness");
         }
         lastUpdateTime = Time.time;
         PlayerPrefs.SetFloat("TimeRemaining", timeRemaining);
