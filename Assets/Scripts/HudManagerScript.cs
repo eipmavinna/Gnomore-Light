@@ -31,6 +31,7 @@ public class HudManagerScript : MonoBehaviour
         lastUpdateTime = Time.time;
         timeBarWidth = timeTracker.transform.localScale.x;
 
+        //retrieving game data to show on the current scene
         if (PlayerPrefs.GetInt("InLevel", 0) == 0)
         {
             PlayerPrefs.SetFloat("TimeRemaining", timeLimit);
@@ -40,6 +41,7 @@ public class HudManagerScript : MonoBehaviour
             playerScript.RestorePosition();
         }
         
+        //retrieving game data
         bugsCollected = PlayerPrefs.GetInt("BugsCollected", 0);
         totalBugs = PlayerPrefs.GetInt("TotalBugs", 0);
         timeRemaining = PlayerPrefs.GetFloat("TimeRemaining", timeLimit);
@@ -52,6 +54,7 @@ public class HudManagerScript : MonoBehaviour
         UpdateTimeRemaining();
     }
 
+    //called if the player completes the level
     public void DisplayLevelCompleteOverlay()
     {
         gameOverlay.gameObject.SetActive(false);
@@ -63,6 +66,8 @@ public class HudManagerScript : MonoBehaviour
         Invoke("ReturnToMap", 5f);
     }
 
+
+    //called if player dies
     public void DisplayDeathOverlay(string message)
     {
         string[] deathMessages = { "You died!", "Wasted" };
@@ -74,11 +79,15 @@ public class HudManagerScript : MonoBehaviour
 
         DisplayLevelCompleteOverlay();
     }
+
+   
     public void ReturnToMap()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("MapScene");
     }
 
+
+    //changes playerprefs if player contacts a bug
     public void OnBugFound(GameObject bug)
     {
         Destroy(bug);
@@ -87,6 +96,8 @@ public class HudManagerScript : MonoBehaviour
         UpdateBugTracker();
     }
 
+
+    //updates the time during a level
     void UpdateTimeRemaining()
     {
         //Do not update time if not in a level
