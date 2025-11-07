@@ -1,4 +1,3 @@
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -8,7 +7,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(ParticleSystem))]
 [RequireComponent(typeof(SpriteRenderer))]
-//[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Animator))]
 
 public class PlayerScript : MonoBehaviour
 {
@@ -49,7 +48,7 @@ public class PlayerScript : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _deathParticles = GetComponent<ParticleSystem>();
         _collider = GetComponent<BoxCollider2D>();
-        initialGScale = _rbody.gravityScale;  //taking the initial gravity scale so it can be edited freely in the unity editor instead of changing once the player leaves a ladder
+        initialGScale = _rbody.gravityScale;  //taking the initial gravity scale so it can be edited freely in the unity instead of changing once the player leaves a ladder
         //Debug.Log(initialGScale);
 
         _hudManager = FindAnyObjectByType<HudManagerScript>();
@@ -64,8 +63,8 @@ public class PlayerScript : MonoBehaviour
 
 
 
-
-        if (sceneName != "MoleHoleScene") //or the rabbit hole scene
+        //only allow vertical movement if in the mole hole scene
+        if (sceneName != "MoleHoleScene")
         {
             verticalMove.Disable();
         }
@@ -95,6 +94,7 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (IsGrounded())
         {
             lastTimeGrounded = Time.time;
@@ -102,18 +102,11 @@ public class PlayerScript : MonoBehaviour
             //Debug.Log("is grounded");
         }
 
-        float moveDelta = 0.3f;
-        //if (_rbody.linearVelocity.x != 0)
-        //{
-        //    _animator.SetBool("Moving", true);
-        //}
-        //else
-        //{
-        //    _animator.SetBool("Moving", false);
-        //}
 
-        _animator.SetBool("Moving", (Mathf.Abs(_rbody.linearVelocityX) >= 0.005f));  //float comparisons not great
-        
+
+        //animator code
+        float moveDelta = 0.3f;
+        _animator.SetBool("Moving", (Mathf.Abs(_rbody.linearVelocityX) >= 0.005f));
         if(SceneName != "MoleHoleScene")
         {
             _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
@@ -130,6 +123,7 @@ public class PlayerScript : MonoBehaviour
 
     }
 
+    //flips the player's sprite
     void Flip()
     {
         facingRight = !facingRight;
@@ -138,8 +132,11 @@ public class PlayerScript : MonoBehaviour
         transform.localScale = theScale;
     }
 
+
+
     private void FixedUpdate()
     {
+        //basic player movement
         _rbody.linearVelocityX = horizontalDirection * moveSpeed;
         if(verticalMove.enabled)
         {
@@ -147,20 +144,26 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+
+
+
+    //Input action methods:
+
+
+
     void OnMove(InputValue value)
     {
         float direction = value.Get<float>();
         horizontalDirection = direction;
     }
 
-    //this won't work if the inputaction is disabled
+    //only works in scenes with vertical move enabled, or on ladders
     void OnVerticalMove(InputValue value)
     {
         float direction = value.Get<float>();
         verticalDirection = direction;
     }
 
-    
 
     void OnJump(InputValue button)
     {
@@ -180,6 +183,8 @@ public class PlayerScript : MonoBehaviour
         }
 
     }
+    
+    //used for jumping
     private bool WasGrounded()
     {
         //is the difference from now and last time grounded insignificant
@@ -196,9 +201,8 @@ public class PlayerScript : MonoBehaviour
         //lastTimeJumped = 0;
         return (hit3.collider != null || hit2.collider != null || hit1.collider != null);
     }
-
-
     
+    //used for going through enterences 
     private void OnInteract(InputValue value)
     {
         Debug.Log("interacted");
@@ -212,6 +216,12 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+
+
+
+
+
+    //checks for enemy collisions
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -219,6 +229,10 @@ public class PlayerScript : MonoBehaviour
             Die(collision.gameObject.name);
         }
     }
+
+
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)         
     {
@@ -229,38 +243,40 @@ public class PlayerScript : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("button"))
         {
+            //store the name of the button's scene in case the player interacts with it
             buttonName = collision.gameObject.name;
-            Debug.Log(buttonName);
         }
 
     }
 
+
     private void OnTriggerStay2D(Collider2D collision)
     {
+        //allowing player to move up the ladder
         if (collision.gameObject.CompareTag("Ladder"))
         {
             _rbody.gravityScale = 4;
             verticalMove.Enable();
-            //jump.Disable();
         }
         
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        //disabling vertical move on exiting a ladder
         if (collision.gameObject.CompareTag("Ladder"))
         {
             _rbody.gravityScale = initialGScale;
             verticalMove.Disable();
-            //jump.Enable();
         }
         else if (collision.gameObject.CompareTag("button"))
         {
             buttonName = null;
-            Debug.Log("null");
         }
     }
 
+
+    //logic upon player death
     public void Die(string reason)
     {
         LockMovement();
@@ -272,7 +288,6 @@ public class PlayerScript : MonoBehaviour
 
     public void LockMovement()
     {
-        //_rbody.gravityScale = 0;
         InputAction move = playerInput.actions["Move"];
         move.Disable();
         jump.Disable();

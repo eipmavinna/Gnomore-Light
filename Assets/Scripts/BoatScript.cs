@@ -26,26 +26,29 @@ public class BoatScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moving) //&& _rbody.linearVelocity.magnitude < 7)
+        if (moving)
         {
-            //_rbody.AddForce(Vector2.right * speed);
             _rbody.linearVelocity = Vector2.right * speed;
         }
                 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
+        //end of level logic
+        //reset playerprefs
         int bugsCollected = PlayerPrefs.GetInt("BugsCollected", 0);
         int totalBugs = PlayerPrefs.GetInt("TotalBugs", 0);
         if (bugsCollected < totalBugs)
         {
             //TODO: display message
+            //do not allow the player to leave
             return;
         }
 
         if (collision.gameObject.CompareTag("Player"))
         {
+            //if player has enough bugs:
+
             PlayerScript player = collision.gameObject.GetComponent<PlayerScript>();
             player.LockMovement();
             Destroy(barrier);

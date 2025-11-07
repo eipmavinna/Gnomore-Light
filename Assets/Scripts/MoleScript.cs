@@ -28,6 +28,7 @@ public class MoleScript : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //moles just move from a start pos to an end
         if (!vertical)
         {
             if (transform.position.x > endingVal)
@@ -56,22 +57,4 @@ public class MoleScript : MonoBehaviour
         }
 
     }
-
-    //TODO: Implement
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    //if it's a moleWall, delete the box collider/deactivate
-    //    if (collision.gameObject.CompareTag("MoleWall"))
-    //    {
-    //        collision.gameObject.GetComponent<Collider2D>().enabled = false;
-    //    }
-    //}
-    //private void OnCollisionExit2D(Collision2D collision)
-    //{
-    //    //if moleWall, put box collider back
-    //    if (collision.gameObject.CompareTag("MoleWall"))
-    //    {
-    //        collision.gameObject.GetComponent<Collider2D>().enabled = true;
-    //    }
-    //}
 }

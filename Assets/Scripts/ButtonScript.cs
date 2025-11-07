@@ -18,14 +18,13 @@ public class ButtonScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //Debug.Log("click");
+            //make image visible
             buttonIconSprite.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
         }
-        //Debug.Log("sprite visible");
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //Debug.Log("sprite invisible");
+        //make image invisible when player leaves
         buttonIconSprite.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 0);
 
     }

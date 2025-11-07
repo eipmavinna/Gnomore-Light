@@ -10,11 +10,10 @@ public class SquirrelScript : MonoBehaviour
     Rigidbody2D _rbody;
     public float speed;
     public float startX;
-    public float startY;//change these once I have a rotation
+    public float startY;
     public float endY;
-    public float startPos; //index of the starting position
+    public float startPos;
     public bool goingRight;
-    List<Vector2> StartPositions = new List<Vector2> { new Vector2(-20, 17), new Vector2(16, 15) };
     Animator _anim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,15 +29,7 @@ public class SquirrelScript : MonoBehaviour
         {
             _anim.Play("leftSquirrel");
         }
-        //if(startPos == 1)
-        //{
-        //    goingRight = false;
-        //}
-        //else
-        //{
-        //    goingRight = true;
-        //}
-        
+
     }
 
     // Update is called once per frame
@@ -48,6 +39,7 @@ public class SquirrelScript : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        //squirrels just move from one end to another
         if(transform.position.y < endY)
         {
             Vector2 st = new Vector2(startX, startY);
