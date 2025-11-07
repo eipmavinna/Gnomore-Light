@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(ParticleSystem))]
 [RequireComponent(typeof(SpriteRenderer))]
+//[RequireComponent(typeof(Animator))]
+
 public class PlayerScript : MonoBehaviour
 {
     //public float jumpStrength;
@@ -16,6 +18,8 @@ public class PlayerScript : MonoBehaviour
     float verticalDirection = 0;
     string sceneName;
     float initialGScale;
+    Animator _animator;
+    bool facingRight = true;
 
     private PlayerInput playerInput;
     private InputAction verticalMove;
@@ -30,6 +34,7 @@ public class PlayerScript : MonoBehaviour
     public float jumpForce;
 
     string buttonName;
+    string SceneName;
 
     Rigidbody2D _rbody;
     BoxCollider2D _collider;
@@ -53,9 +58,14 @@ public class PlayerScript : MonoBehaviour
         jump = playerInput.actions["Jump"];
         jumpCooldown = fallAllowance;
 
-
+        _animator = GetComponent<Animator>();
         sceneName = SceneManager.GetActiveScene().name;
-        if(sceneName != "MoleHoleScene") //or the rabbit hole scene
+
+
+
+
+
+        if (sceneName != "MoleHoleScene") //or the rabbit hole scene
         {
             verticalMove.Disable();
         }
@@ -91,7 +101,41 @@ public class PlayerScript : MonoBehaviour
             jumpsLeft = 0;
             //Debug.Log("is grounded");
         }
+
+        float moveDelta = 0.3f;
+        //if (_rbody.linearVelocity.x != 0)
+        //{
+        //    _animator.SetBool("Moving", true);
+        //}
+        //else
+        //{
+        //    _animator.SetBool("Moving", false);
+        //}
+
+        _animator.SetBool("Moving", (Mathf.Abs(_rbody.linearVelocityX) >= 0.005f));  //float comparisons not great
         
+        if(SceneName != "MoleHoleScene")
+        {
+            _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
+            _animator.SetBool("Falling", _rbody.linearVelocityY <= -moveDelta);
+        }
+        if (horizontalDirection < 0 && facingRight)
+        {
+            Flip();
+        }
+        else if (horizontalDirection > 0 && !facingRight)
+        {
+            Flip();
+        }
+
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
     private void FixedUpdate()
