@@ -6343,7 +6343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6122895345197507593, guid: 7b56805f4d4db2f4b9930439b66a8dac, type: 3}
       propertyPath: m_Name
-      value: Squirrel (1)
+      value: Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7842795802050551898, guid: 7b56805f4d4db2f4b9930439b66a8dac, type: 3}
       propertyPath: m_LocalPosition.x

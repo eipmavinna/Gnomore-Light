@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -109,6 +110,7 @@ public class PlayerScript : MonoBehaviour
         _animator.SetBool("Moving", (Mathf.Abs(_rbody.linearVelocityX) >= 0.005f));
         if(SceneName != "MoleHoleScene")
         {
+            
             _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
             _animator.SetBool("Falling", _rbody.linearVelocityY <= -moveDelta);
         }
@@ -171,6 +173,7 @@ public class PlayerScript : MonoBehaviour
         {
             if (jumpsLeft > 0 || (WasGrounded() && (Time.time - lastTimeJumped > jumpCooldown)))
             {
+                _animator.SetBool("Jumping", true);
                 _rbody.AddForce(Vector2.up * jumpForce);
                 lastTimeJumped = Time.time;
                 jumpsLeft -= 0;
@@ -194,12 +197,17 @@ public class PlayerScript : MonoBehaviour
     //checks if the player is touching the ground in order to determine if the player can jump
     private bool IsGrounded()
     {
+        Debug.Log("Grounded");
         Vector3 pos = transform.position;
         RaycastHit2D hit1 = Physics2D.Raycast(new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z), Vector2.down, 1f, groundLayers);  //add or subtract half a unit to check both sides of the player
         RaycastHit2D hit2 = Physics2D.Raycast(new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), Vector2.down, 1f, groundLayers);
         RaycastHit2D hit3 = Physics2D.Raycast(transform.position, Vector2.down, 0.5f, groundLayers);
         //lastTimeJumped = 0;
-        return (hit3.collider != null || hit2.collider != null || hit1.collider != null);
+        bool grounded = hit3.collider != null || hit2.collider != null || hit1.collider != null;
+        if (grounded){
+            _animator.SetBool("Falling", false);
+        }
+        return (grounded);
     }
     
     //used for going through enterences 
