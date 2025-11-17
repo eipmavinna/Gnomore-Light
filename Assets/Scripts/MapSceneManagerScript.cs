@@ -24,7 +24,7 @@ public class MapSceneManagerScript : MonoBehaviour
 
     public void LoadWoodsLevel()
     {
-        PlayerPrefs.SetInt("TotalBugs", 5);
+        PlayerPrefs.SetInt("TotalBugs", 10);
         UnityEngine.SceneManagement.SceneManager.LoadScene("TheWoodsScene");
     }
 
