@@ -14,6 +14,8 @@ public class HudManagerScript : MonoBehaviour
     public TMP_Text bugsCollectedText;
     public TMP_Text timeRemainingText;
 
+    public Canvas pauseOverlay;
+
     public float timeLimit;
 
     PlayerScript playerScript;
@@ -27,6 +29,8 @@ public class HudManagerScript : MonoBehaviour
     void Start()
     {
         levelCompleteOverlay.gameObject.SetActive(false);
+        pauseOverlay.gameObject.SetActive(false);
+
         playerScript = FindAnyObjectByType<PlayerScript>();
         lastUpdateTime = Time.time;
         timeBarWidth = timeTracker.transform.localScale.x;
@@ -121,5 +125,23 @@ public class HudManagerScript : MonoBehaviour
     void UpdateBugTracker()
     {
         bugTracker.text = "Bugs: " + bugsCollected + " / " + totalBugs;
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+        pauseOverlay.gameObject.SetActive(true);
+        gameOverlay.gameObject.SetActive(false);
+    }
+
+    public void Resume() { 
+        Time.timeScale = 1;
+        pauseOverlay.gameObject.SetActive(false);
+        gameOverlay.gameObject.SetActive(true);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

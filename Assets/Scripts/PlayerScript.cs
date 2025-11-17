@@ -150,9 +150,10 @@ public class PlayerScript : MonoBehaviour
 
 
     //Input action methods:
-
-
-
+    private void OnPause(InputValue value)
+    {
+        _hudManager.Pause();
+    }
     void OnMove(InputValue value)
     {
         float direction = value.Get<float>();

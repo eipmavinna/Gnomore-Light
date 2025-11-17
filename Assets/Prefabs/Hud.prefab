@@ -256,7 +256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 239493612705711423}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5265509269043072035}
+        m_TargetAssemblyTypeName: HudManagerScript, Assembly-CSharp
+        m_MethodName: ReturnToMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1690298643188856357
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +816,7 @@ MonoBehaviour:
   deathMessageText: {fileID: 4157970299545704846}
   bugsCollectedText: {fileID: 486639487687754057}
   timeRemainingText: {fileID: 6869032582582929934}
+  pauseOverlay: {fileID: 8862312499263716660}
   timeLimit: 180
 --- !u!1 &3576315784744684033
 GameObject:
@@ -1438,7 +1451,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1671410373445355249}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5265509269043072035}
+        m_TargetAssemblyTypeName: HudManagerScript, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4899339387292864544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,7 +1482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2220965812075617580
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1525,7 +1550,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1738248217240954084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1697,7 +1722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6560577551518354710
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1767,7 +1792,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &6334419171286368122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1821,7 +1846,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: 0}
+  m_AnchoredPosition: {x: -0.0000076294, y: -80}
   m_SizeDelta: {x: 180, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3252327155520510252
@@ -1905,7 +1930,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8017912645095826806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5265509269043072035}
+        m_TargetAssemblyTypeName: HudManagerScript, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7647670073817001093
 GameObject:
   m_ObjectHideFlags: 0
