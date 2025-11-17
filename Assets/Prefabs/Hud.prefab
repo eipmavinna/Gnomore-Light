@@ -817,7 +817,7 @@ MonoBehaviour:
   bugsCollectedText: {fileID: 486639487687754057}
   timeRemainingText: {fileID: 6869032582582929934}
   pauseOverlay: {fileID: 8862312499263716660}
-  timeLimit: 180
+  timeLimit: 240
 --- !u!1 &3576315784744684033
 GameObject:
   m_ObjectHideFlags: 0
