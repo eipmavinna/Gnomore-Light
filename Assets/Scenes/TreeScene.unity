@@ -1198,6 +1198,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraScript
   player: {fileID: 234368186}
+  optionalLowestStopX: -99999
+  stopX: 0
+  optionalLowestStopY: -8
+  stopY: -8
   offset: 1
 --- !u!1 &143325131
 GameObject:
@@ -3851,6 +3855,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonScript
   buttonIconSprite: {fileID: 1445731605}
+  isTmpText: 0
+  text: {fileID: 0}
+  btnText: 
 --- !u!61 &647565092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7525,7 +7532,7 @@ GameObject:
   - component: {fileID: 1344361622}
   - component: {fileID: 1344361621}
   m_Layer: 0
-  m_Name: Border
+  m_Name: Falling
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
