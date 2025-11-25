@@ -7,6 +7,10 @@ public class CameraScript : MonoBehaviour
 {
     string sceneName;
     public GameObject player;
+    public float optionalLowestStopX = -99999;
+    public float stopX;
+    public float optionalLowestStopY = -99999;
+    public float stopY;
 
     public float offset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,28 +30,17 @@ public class CameraScript : MonoBehaviour
 
     private void LateUpdate()
     {
-        //different camera settings for different levels
-        if (sceneName == "TreeScene")
+        float cameraY = player.transform.position.y;
+        float cameraX = player.transform.position.x;
+        if(player.transform.position.y < optionalLowestStopY)
         {
-            if(player.transform.position.y < -8)
-            {
-                transform.position = new Vector3(player.transform.position.x, -8, -10);
-            }
-            else
-            {
-                transform.position = new Vector3(player.transform.position.x, player.transform.position.y + offset, -10);
-            }
+            cameraY = stopY;
         }
-        else if (sceneName == "TheWoodsScene")
+        if (player.transform.position.x < optionalLowestStopX)
         {
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y + offset, -10);
+            cameraX = stopX;
         }
-        else
-        {
-            //default camera movement: following player
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y + offset, -10);
-
-        }
+        transform.position = new Vector3(cameraX,cameraY + offset, -10);
 
     }
 }
