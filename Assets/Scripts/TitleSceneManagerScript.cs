@@ -16,7 +16,8 @@ public class TitleSceneManagerScript : MonoBehaviour
     }
     public void OnStartButtonClicked()
     {
-        SceneManager.LoadScene("MapScene");
+        PlayerPrefs.SetInt("TotalBugs", 1);
+        SceneManager.LoadScene("TutorialScene");
     }
     public void OnExitButtonClicked()
     {

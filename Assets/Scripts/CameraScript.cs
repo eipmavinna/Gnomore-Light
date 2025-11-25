@@ -45,7 +45,7 @@ public class CameraScript : MonoBehaviour
         else
         {
             //default camera movement: following player
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y + offset, -10);
 
         }
 

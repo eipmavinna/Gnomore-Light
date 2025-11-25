@@ -35,5 +35,6 @@ public class MapButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerClick(PointerEventData eventData)
     {
         SceneManager.LoadScene(nextScene);
+
     }
 }
