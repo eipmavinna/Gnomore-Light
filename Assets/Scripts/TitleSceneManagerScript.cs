@@ -17,6 +17,7 @@ public class TitleSceneManagerScript : MonoBehaviour
     public void OnStartButtonClicked()
     {
         PlayerPrefs.SetInt("TotalBugs", 1);
+        //Debug.Log("Total: " + PlayerPrefs.GetInt("TotalBugs").ToString());
         SceneManager.LoadScene("TutorialScene");
     }
     public void OnExitButtonClicked()

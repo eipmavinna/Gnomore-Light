@@ -22,10 +22,13 @@ public class ButtonScript : MonoBehaviour
     {
         if (!isTmpText)
         {
-            if (collision.gameObject.CompareTag("Player"))
+            if (buttonIconSprite != null)
             {
-                //make image visible
-                buttonIconSprite.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    //make image visible
+                    buttonIconSprite.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+                }
             }
         }
         else
@@ -37,8 +40,11 @@ public class ButtonScript : MonoBehaviour
     {
         if (!isTmpText)
         {
-            //make image invisible when player leaves
-            buttonIconSprite.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 0);
+            if (buttonIconSprite != null)
+            {
+                //make image invisible when player leaves
+                buttonIconSprite.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 0);
+            }
 
         }
         else
