@@ -198,7 +198,7 @@ public class PlayerScript : MonoBehaviour
     //checks if the player is touching the ground in order to determine if the player can jump
     private bool IsGrounded()
     {
-        Debug.Log("Grounded");
+        //Debug.Log("Grounded");
         Vector3 pos = transform.position;
         RaycastHit2D hit1 = Physics2D.Raycast(new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z), Vector2.down, 1f, groundLayers);  //add or subtract half a unit to check both sides of the player
         RaycastHit2D hit2 = Physics2D.Raycast(new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), Vector2.down, 1f, groundLayers);
