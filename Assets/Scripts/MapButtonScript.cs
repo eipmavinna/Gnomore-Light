@@ -34,6 +34,7 @@ public class MapButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        PlayerPrefs.SetInt("TotalBugs", 10);
         SceneManager.LoadScene(nextScene);
 
     }
