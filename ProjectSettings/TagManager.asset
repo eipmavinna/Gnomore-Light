@@ -9,6 +9,8 @@ TagManager:
   - MoleWall
   - Bug
   - button
+  - Squirrel
+  - Mole
   layers:
   - Default
   - TransparentFX
