@@ -11,6 +11,8 @@ TagManager:
   - button
   - Squirrel
   - Mole
+  - Bird
+  - Ant
   layers:
   - Default
   - TransparentFX
