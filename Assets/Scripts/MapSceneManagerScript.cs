@@ -1,10 +1,12 @@
 using UnityEngine;
-
+using TMPro;
 public class MapSceneManagerScript : MonoBehaviour
 {
+    public TMP_Text bugCounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        bugCounter.text = "Bugs collected: " + PlayerPrefs.GetInt("MapTotalBugs").ToString();
         string bugsLoaded = PlayerPrefs.GetString("BugsLoaded", "");
         string[] bugs = bugsLoaded.Split(';');
         foreach (var item in bugs)

@@ -11,6 +11,7 @@ public class CameraScript : MonoBehaviour
     public float stopX;
     public float optionalLowestStopY = -99999;
     public float stopY;
+    public float cameraZoom = -10;
 
     public float offset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,7 +41,7 @@ public class CameraScript : MonoBehaviour
         {
             cameraX = stopX;
         }
-        transform.position = new Vector3(cameraX,cameraY + offset, -10);
+        transform.position = new Vector3(cameraX,cameraY + offset, cameraZoom);
 
     }
 }
