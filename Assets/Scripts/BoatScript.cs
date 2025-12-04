@@ -56,6 +56,7 @@ public class BoatScript : MonoBehaviour
 
             //stop the timer so the day doesn't end while on the boat
             PlayerPrefs.SetInt("InLevel", 0);
+            PlayerPrefs.SetInt("MapTotalBugs", (PlayerPrefs.GetInt("MapTotalBugs") + PlayerPrefs.GetInt("TotalBugs")));
             _hudManager.DisplayLevelCompleteOverlay();
 
             

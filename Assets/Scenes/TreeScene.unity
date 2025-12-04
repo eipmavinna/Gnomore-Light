@@ -427,7 +427,7 @@ PolygonCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 2453b692da3358e419f2bb986934c68b, type: 2}
+  m_Material: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2990,6 +2990,10 @@ PrefabInstance:
       value: wood-platform (14)
       objectReference: {fileID: 0}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 3.0777595
       objectReference: {fileID: 0}
@@ -3067,6 +3071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 3.0646722
@@ -3596,7 +3604,7 @@ PolygonCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 2453b692da3358e419f2bb986934c68b, type: 2}
+  m_Material: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6115,6 +6123,10 @@ PrefabInstance:
       value: wood-platform (13)
       objectReference: {fileID: 0}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 3.164341
       objectReference: {fileID: 0}
@@ -6193,6 +6205,10 @@ PrefabInstance:
       value: wood-platform (11)
       objectReference: {fileID: 0}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 2.773319
       objectReference: {fileID: 0}
@@ -6270,6 +6286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 3.4320974
@@ -6409,6 +6429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 1.6352711
@@ -6801,6 +6825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 3.5662558
@@ -9087,6 +9115,10 @@ PrefabInstance:
       value: wood-platform (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 4.154804
       objectReference: {fileID: 0}
@@ -9254,6 +9286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 4.635322
@@ -9500,7 +9536,7 @@ PolygonCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 2453b692da3358e419f2bb986934c68b, type: 2}
+  m_Material: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -10354,6 +10390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 54d61ba26ff13b545ac46822ae242f05, type: 2}
     - target: {fileID: 1360152366390741532, guid: efa6371de7c50444296258b56f5f829e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 3.165235
