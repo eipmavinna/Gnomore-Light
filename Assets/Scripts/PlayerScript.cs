@@ -12,7 +12,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
-    //public float jumpStrength;
     public float moveSpeed;
     float horizontalDirection = 0;
     float verticalDirection = 0;
@@ -34,9 +33,9 @@ public class PlayerScript : MonoBehaviour
     float maxFallspeed = 4f; //Used for gliding
     public float fallAllowance;
     public float jumpForce;
+    public bool sceneEnabledVerticalMove = false;
 
     string buttonName;
-    string SceneName;
 
     Rigidbody2D _rbody;
     BoxCollider2D _collider;
@@ -64,7 +63,7 @@ public class PlayerScript : MonoBehaviour
 
         //Only allow vertical movement in the mole hole scene
         sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName != "MoleHoleScene")
+        if (sceneName != "MoleHoleScene" && !sceneEnabledVerticalMove)
         {
             verticalMove.Disable();
         }
@@ -88,7 +87,7 @@ public class PlayerScript : MonoBehaviour
         //Animator code
         float moveDelta = 0.3f;
         _animator.SetBool("Moving", (Mathf.Abs(_rbody.linearVelocityX) >= 0.005f));
-        if(SceneName != "MoleHoleScene")
+        if(sceneName != "MoleHoleScene" && !sceneEnabledVerticalMove)
         {
             _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
             _animator.SetBool("Falling", _rbody.linearVelocityY <= -moveDelta);
@@ -217,7 +216,6 @@ public class PlayerScript : MonoBehaviour
     //checks if the player is touching the ground in order to determine if the player can jump
     private bool IsGrounded()
     {
-        Debug.Log("Grounded");
         Vector3 pos = transform.position;
         RaycastHit2D hit1 = Physics2D.Raycast(new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z), Vector2.down, 1f, groundLayers);  //add or subtract half a unit to check both sides of the player
         RaycastHit2D hit2 = Physics2D.Raycast(new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), Vector2.down, 1f, groundLayers);
