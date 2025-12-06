@@ -24,20 +24,20 @@ public class MapSceneManagerScript : MonoBehaviour
         
     }
 
-    public void LoadWoodsLevel()
-    {
-        int total = PlayerPrefs.GetInt("TotalBugs");
-        PlayerPrefs.SetInt("TotalBugs", 10);
-        Debug.Log( "total before: " + total.ToString() + " after: "  + PlayerPrefs.GetInt("TotalBugs").ToString());
+    //public void LoadWoodsLevel()
+    //{
+    //    int total = PlayerPrefs.GetInt("TotalBugs");
+    //    PlayerPrefs.SetInt("TotalBugs", 10);
+    //    Debug.Log( "total before: " + total.ToString() + " after: "  + PlayerPrefs.GetInt("TotalBugs").ToString());
 
-        UnityEngine.SceneManagement.SceneManager.LoadScene("TheWoodsScene");
-    }
+    //    UnityEngine.SceneManagement.SceneManager.LoadScene("TheWoodsScene");
+    //}
 
-    public void LoadGrasslandsLevel()
-    {
-        int total = PlayerPrefs.GetInt("TotalBugs");
-        PlayerPrefs.SetInt("TotalBugs", 10);
-        Debug.Log("total before: " + total.ToString() + " after: " + PlayerPrefs.GetInt("TotalBugs").ToString());
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Grasslands");
-    }
+//    public void LoadGrasslandsLevel()
+//    {
+//        int total = PlayerPrefs.GetInt("TotalBugs");
+//        PlayerPrefs.SetInt("TotalBugs", 10);
+//        Debug.Log("total before: " + total.ToString() + " after: " + PlayerPrefs.GetInt("TotalBugs").ToString());
+//        UnityEngine.SceneManagement.SceneManager.LoadScene("Grasslands");
+//    }
 }
