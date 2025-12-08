@@ -1,0 +1,1729 @@
+fileFormatVersion: 2
+guid: 9508deb2bf4916f4e8a72b073e805eb3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1969046558531472801
+    second: crumbs_0
+  - first:
+      213: 4409890613602522428
+    second: crumbs_1
+  - first:
+      213: 8925973653198372530
+    second: crumbs_2
+  - first:
+      213: -1446528093251118341
+    second: crumbs_3
+  - first:
+      213: 7784023749091295397
+    second: crumbs_4
+  - first:
+      213: -2859139246068407838
+    second: crumbs_5
+  - first:
+      213: -8656090865805250403
+    second: crumbs_6
+  - first:
+      213: 4171750458753291215
+    second: crumbs_7
+  - first:
+      213: -408092822672093420
+    second: crumbs_8
+  - first:
+      213: 1155856682357195891
+    second: crumbs_9
+  - first:
+      213: 466083947511390159
+    second: crumbs_10
+  - first:
+      213: 3195834614465443371
+    second: crumbs_11
+  - first:
+      213: 895867612801064007
+    second: crumbs_12
+  - first:
+      213: 6297569490129508421
+    second: crumbs_13
+  - first:
+      213: -8359816069076354931
+    second: crumbs_14
+  - first:
+      213: 3936048782651221000
+    second: crumbs_15
+  - first:
+      213: -483267924989594762
+    second: crumbs_16
+  - first:
+      213: 7934469454413163401
+    second: crumbs_17
+  - first:
+      213: 4100327736529262600
+    second: crumbs_18
+  - first:
+      213: -824036222311915829
+    second: crumbs_19
+  - first:
+      213: 8977069689632147564
+    second: crumbs_20
+  - first:
+      213: -5563807782628992742
+    second: crumbs_21
+  - first:
+      213: -5002886612715740677
+    second: crumbs_22
+  - first:
+      213: -2426822624384120481
+    second: crumbs_23
+  - first:
+      213: -5206906861098291547
+    second: crumbs_24
+  - first:
+      213: -1980353869618301382
+    second: crumbs_25
+  - first:
+      213: 8859471012022678304
+    second: crumbs_26
+  - first:
+      213: 5938345388493563796
+    second: crumbs_27
+  - first:
+      213: -2296172164187216198
+    second: crumbs_28
+  - first:
+      213: 1463766772940624867
+    second: crumbs_29
+  - first:
+      213: 2341615210484095188
+    second: crumbs_30
+  - first:
+      213: 3004112945438637545
+    second: crumbs_31
+  - first:
+      213: 8109163440604716920
+    second: crumbs_32
+  - first:
+      213: -1720322106424035741
+    second: crumbs_33
+  - first:
+      213: -7470525425011073983
+    second: crumbs_34
+  - first:
+      213: -4304109358317633405
+    second: crumbs_35
+  - first:
+      213: 3783379216641486489
+    second: crumbs_36
+  - first:
+      213: 721417099764557285
+    second: crumbs_37
+  - first:
+      213: -2058803304126418589
+    second: crumbs_38
+  - first:
+      213: 8534850499302831443
+    second: crumbs_39
+  - first:
+      213: -7038886982352113320
+    second: crumbs_40
+  - first:
+      213: -4448296137060694005
+    second: crumbs_41
+  - first:
+      213: 5492461779365432466
+    second: crumbs_42
+  - first:
+      213: -4260339271935268269
+    second: crumbs_43
+  - first:
+      213: -6597221190172245367
+    second: crumbs_44
+  - first:
+      213: 1009306916648404061
+    second: crumbs_45
+  - first:
+      213: -7176664570383220557
+    second: crumbs_46
+  - first:
+      213: 9191287911563765010
+    second: crumbs_47
+  - first:
+      213: -8723795229431484175
+    second: crumbs_48
+  - first:
+      213: -2473644102880676676
+    second: crumbs_49
+  - first:
+      213: 9056804087147588996
+    second: crumbs_50
+  - first:
+      213: -4851194065416474385
+    second: crumbs_51
+  - first:
+      213: 5760491749724471129
+    second: crumbs_52
+  - first:
+      213: -7956706164582951334
+    second: crumbs_53
+  - first:
+      213: 258071812395583190
+    second: crumbs_54
+  - first:
+      213: 390379888421815824
+    second: crumbs_55
+  - first:
+      213: -5338080526534342271
+    second: crumbs_56
+  - first:
+      213: 5623661623915294341
+    second: crumbs_57
+  - first:
+      213: 6012074760275923603
+    second: crumbs_58
+  - first:
+      213: 669320504757222849
+    second: crumbs_59
+  - first:
+      213: 6374213966804245407
+    second: crumbs_60
+  - first:
+      213: -6688010826948933978
+    second: crumbs_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crumbs_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 316
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad497b9965735b10800000000000000
+      internalID: 1969046558531472801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 312
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c359b120624133d30800000000000000
+      internalID: 4409890613602522428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 329
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be7269eebd6fdb70800000000000000
+      internalID: 8925973653198372530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 310
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfad42cfc56ecebe0800000000000000
+      internalID: -1446528093251118341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 308
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a08ac7bb58660c60800000000000000
+      internalID: 7784023749091295397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 293
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1e6ba010c4258d0800000000000000
+      internalID: -2859139246068407838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_6
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 280
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90bc2038336fd780800000000000000
+      internalID: -8656090865805250403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_7
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 295
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3109970f805e930800000000000000
+      internalID: 4171750458753291215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 172
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f4e3d6db9265af0800000000000000
+      internalID: -408092822672093420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 234
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3748923578d6a0010800000000000000
+      internalID: 1155856682357195891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_10
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 263
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf9dee71ecd77600800000000000000
+      internalID: 466083947511390159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 248
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b263c1c46a2e95c20800000000000000
+      internalID: 3195834614465443371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 192
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74cd8cae8d2ce6c00800000000000000
+      internalID: 895867612801064007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_13
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 219
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548d187d516756750800000000000000
+      internalID: 6297569490129508421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_14
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 135
+        width: 45
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88f91fc397fbfb80800000000000000
+      internalID: -8359816069076354931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_15
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 275
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804e8848387af9630800000000000000
+      internalID: 3936048782651221000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_16
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 234
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673b7a7f1661b49f0800000000000000
+      internalID: -483267924989594762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_17
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 222
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98beb7f1ee5ec1e60800000000000000
+      internalID: 7934469454413163401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_18
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 183
+        width: 40
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80812861a5a47e830800000000000000
+      internalID: 4100327736529262600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_19
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 232
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce1b07fb6f6094f0800000000000000
+      internalID: -824036222311915829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 248
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c684376f155f49c70800000000000000
+      internalID: 8977069689632147564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_21
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 189
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1958ddcc4269c2b0800000000000000
+      internalID: -5563807782628992742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_22
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 241
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf16585d12d229ab0800000000000000
+      internalID: -5002886612715740677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_23
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 196
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5904b45ea1325ed0800000000000000
+      internalID: -2426822624384120481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_24
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 248
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae21b51cc95db7b0800000000000000
+      internalID: -5206906861098291547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_25
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 234
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36b4dfd5ae5484e0800000000000000
+      internalID: -1980353869618301382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_26
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 187
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0237b7922f923fa70800000000000000
+      internalID: 8859471012022678304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_27
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 239
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497ecba0bad396250800000000000000
+      internalID: 5938345388493563796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_28
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 147
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab62b72159b5220e0800000000000000
+      internalID: -2296172164187216198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_29
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 152
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e35527ef18505410800000000000000
+      internalID: 1463766772940624867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_30
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 134
+        width: 55
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d85e85a0a61f7020800000000000000
+      internalID: 2341615210484095188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_31
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 151
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edb502bec0c0b920800000000000000
+      internalID: 3004112945438637545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_32
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 161
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f14de5f29898070800000000000000
+      internalID: 8109163440604716920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_33
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 161
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366f75ba8203028e0800000000000000
+      internalID: -1720322106424035741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_34
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 140
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cd0bcd4bc535890800000000000000
+      internalID: -7470525425011073983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_35
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 151
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3800b0fb75bb444c0800000000000000
+      internalID: -4304109358317633405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 113
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ee2823a53418430800000000000000
+      internalID: 3783379216641486489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_37
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 123
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5eb5ea70df20a00800000000000000
+      internalID: 721417099764557285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_38
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 127
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361f42b8d49ad63e0800000000000000
+      internalID: -2058803304126418589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_39
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 112
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355b20e3f41e17670800000000000000
+      internalID: 8534850499302831443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_40
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 103
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851f7ca4599d05e90800000000000000
+      internalID: -7038886982352113320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_41
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 52
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0841ce3b3a7442c0800000000000000
+      internalID: -4448296137060694005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_42
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 102
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c8c7553e4293c40800000000000000
+      internalID: 5492461779365432466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_43
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 111
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ae6a1210c30e4c0800000000000000
+      internalID: -4260339271935268269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_44
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 82
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9828a17f746f174a0800000000000000
+      internalID: -6597221190172245367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_45
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 48
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d544c2c0b47c10e00800000000000000
+      internalID: 1009306916648404061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 55
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b04d2ac89d576c90800000000000000
+      internalID: -7176664570383220557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_47
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 100
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215a91578a30e8f70800000000000000
+      internalID: 9191287911563765010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f03d70a57adee680800000000000000
+      internalID: -8723795229431484175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_49
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 75
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4be0b5bc9dbadd0800000000000000
+      internalID: -2473644102880676676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_50
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48decbe055b30bd70800000000000000
+      internalID: 9056804087147588996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_51
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 50
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe03e5243b81dacb0800000000000000
+      internalID: -4851194065416474385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_52
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 38
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f35e9d9b061ff40800000000000000
+      internalID: 5760491749724471129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_53
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 31
+        width: 49
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a565fd556e9149190800000000000000
+      internalID: -7956706164582951334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_54
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 20
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6416032fad49300800000000000000
+      internalID: 258071812395583190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_55
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 20
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016c6d0b078ea6500800000000000000
+      internalID: 390379888421815824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_56
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 35
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1898d712b045be5b0800000000000000
+      internalID: -5338080526534342271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_57
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ea77693724b0e40800000000000000
+      internalID: 5623661623915294341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_58
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 6
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3929651242e2f6350800000000000000
+      internalID: 6012074760275923603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_59
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 10
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd70fee377e94900800000000000000
+      internalID: 669320504757222849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_60
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b53bda4d1c57850800000000000000
+      internalID: 6374213966804245407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbs_61
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 3
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a60eb566996f23a0800000000000000
+      internalID: -6688010826948933978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      crumbs_0: 1969046558531472801
+      crumbs_1: 4409890613602522428
+      crumbs_10: 466083947511390159
+      crumbs_11: 3195834614465443371
+      crumbs_12: 895867612801064007
+      crumbs_13: 6297569490129508421
+      crumbs_14: -8359816069076354931
+      crumbs_15: 3936048782651221000
+      crumbs_16: -483267924989594762
+      crumbs_17: 7934469454413163401
+      crumbs_18: 4100327736529262600
+      crumbs_19: -824036222311915829
+      crumbs_2: 8925973653198372530
+      crumbs_20: 8977069689632147564
+      crumbs_21: -5563807782628992742
+      crumbs_22: -5002886612715740677
+      crumbs_23: -2426822624384120481
+      crumbs_24: -5206906861098291547
+      crumbs_25: -1980353869618301382
+      crumbs_26: 8859471012022678304
+      crumbs_27: 5938345388493563796
+      crumbs_28: -2296172164187216198
+      crumbs_29: 1463766772940624867
+      crumbs_3: -1446528093251118341
+      crumbs_30: 2341615210484095188
+      crumbs_31: 3004112945438637545
+      crumbs_32: 8109163440604716920
+      crumbs_33: -1720322106424035741
+      crumbs_34: -7470525425011073983
+      crumbs_35: -4304109358317633405
+      crumbs_36: 3783379216641486489
+      crumbs_37: 721417099764557285
+      crumbs_38: -2058803304126418589
+      crumbs_39: 8534850499302831443
+      crumbs_4: 7784023749091295397
+      crumbs_40: -7038886982352113320
+      crumbs_41: -4448296137060694005
+      crumbs_42: 5492461779365432466
+      crumbs_43: -4260339271935268269
+      crumbs_44: -6597221190172245367
+      crumbs_45: 1009306916648404061
+      crumbs_46: -7176664570383220557
+      crumbs_47: 9191287911563765010
+      crumbs_48: -8723795229431484175
+      crumbs_49: -2473644102880676676
+      crumbs_5: -2859139246068407838
+      crumbs_50: 9056804087147588996
+      crumbs_51: -4851194065416474385
+      crumbs_52: 5760491749724471129
+      crumbs_53: -7956706164582951334
+      crumbs_54: 258071812395583190
+      crumbs_55: 390379888421815824
+      crumbs_56: -5338080526534342271
+      crumbs_57: 5623661623915294341
+      crumbs_58: 6012074760275923603
+      crumbs_59: 669320504757222849
+      crumbs_6: -8656090865805250403
+      crumbs_60: 6374213966804245407
+      crumbs_61: -6688010826948933978
+      crumbs_7: 4171750458753291215
+      crumbs_8: -408092822672093420
+      crumbs_9: 1155856682357195891
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
