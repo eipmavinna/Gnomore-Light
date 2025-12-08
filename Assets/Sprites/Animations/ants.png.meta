@@ -1,0 +1,1729 @@
+fileFormatVersion: 2
+guid: 82c9e537b12baee46a87899c2657fd7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6441768536954367968
+    second: ants_0
+  - first:
+      213: -3891608868525927020
+    second: ants_1
+  - first:
+      213: -3529049480373552548
+    second: ants_2
+  - first:
+      213: -816719821533083647
+    second: ants_3
+  - first:
+      213: -762178183843487349
+    second: ants_4
+  - first:
+      213: 8104491179164732000
+    second: ants_5
+  - first:
+      213: 6955369533476755502
+    second: ants_6
+  - first:
+      213: -5940338756803067384
+    second: ants_7
+  - first:
+      213: -3843349260227558113
+    second: ants_8
+  - first:
+      213: 2395971575302256726
+    second: ants_9
+  - first:
+      213: 2202155719345493311
+    second: ants_10
+  - first:
+      213: -1117664105259858799
+    second: ants_11
+  - first:
+      213: -4755530259691322083
+    second: ants_12
+  - first:
+      213: 8625504429391126261
+    second: ants_13
+  - first:
+      213: -5883790535372521176
+    second: ants_14
+  - first:
+      213: 3034051193004301377
+    second: ants_15
+  - first:
+      213: 4721504316199349255
+    second: ants_16
+  - first:
+      213: 3148229673687174266
+    second: ants_17
+  - first:
+      213: -439731856821921157
+    second: ants_18
+  - first:
+      213: 4168489925515723281
+    second: ants_19
+  - first:
+      213: -1536521222493094873
+    second: ants_20
+  - first:
+      213: -8311665605767297965
+    second: ants_21
+  - first:
+      213: 7897463338050686515
+    second: ants_22
+  - first:
+      213: -7284830649404843917
+    second: ants_23
+  - first:
+      213: -7385381011707972892
+    second: ants_24
+  - first:
+      213: 5201513558765693345
+    second: ants_25
+  - first:
+      213: -1527754845570482783
+    second: ants_26
+  - first:
+      213: 5920147438613334309
+    second: ants_27
+  - first:
+      213: 529277105614124480
+    second: ants_28
+  - first:
+      213: 5031509624938770981
+    second: ants_29
+  - first:
+      213: 8663649655432955330
+    second: ants_30
+  - first:
+      213: 4318786532939126938
+    second: ants_31
+  - first:
+      213: 1731990547518101316
+    second: ants_32
+  - first:
+      213: -3405162337791320152
+    second: ants_33
+  - first:
+      213: 3361452263145662830
+    second: ants_34
+  - first:
+      213: 3872157820261012091
+    second: ants_35
+  - first:
+      213: -1586814958123087187
+    second: ants_36
+  - first:
+      213: -5705416933199943783
+    second: ants_37
+  - first:
+      213: -9067677810431499540
+    second: ants_38
+  - first:
+      213: 4043397686023578659
+    second: ants_39
+  - first:
+      213: 5422132454656565737
+    second: ants_40
+  - first:
+      213: -5254966615169270371
+    second: ants_41
+  - first:
+      213: -6059937694983945040
+    second: ants_42
+  - first:
+      213: -8161820168950646265
+    second: ants_43
+  - first:
+      213: -2333828611173720440
+    second: ants_44
+  - first:
+      213: -1329692595596181376
+    second: ants_45
+  - first:
+      213: 463300103879385591
+    second: ants_46
+  - first:
+      213: 5457172977805257393
+    second: ants_47
+  - first:
+      213: -6234024240467456975
+    second: ants_48
+  - first:
+      213: 4320982746809725396
+    second: ants_49
+  - first:
+      213: 4836967642755789814
+    second: ants_50
+  - first:
+      213: -5232965331087105770
+    second: ants_51
+  - first:
+      213: 1857794677970841171
+    second: ants_52
+  - first:
+      213: -6402771604665153726
+    second: ants_53
+  - first:
+      213: 3488621795572048585
+    second: ants_54
+  - first:
+      213: 2040834757923891535
+    second: ants_55
+  - first:
+      213: 6075776718686859936
+    second: ants_56
+  - first:
+      213: 4667330177442286697
+    second: ants_57
+  - first:
+      213: -5234409638085640847
+    second: ants_58
+  - first:
+      213: 6822522820783950876
+    second: ants_59
+  - first:
+      213: 7292262847925564416
+    second: ants_60
+  - first:
+      213: -3520057502442609392
+    second: ants_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ants_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1736
+        width: 199
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efe37aba52c56950800000000000000
+      internalID: 6441768536954367968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1737
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49590ca4a5a3ef9c0800000000000000
+      internalID: -3891608868525927020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1739
+        width: 199
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5abe8ff13c460fc0800000000000000
+      internalID: -3529049480373552548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_3
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1740
+        width: 200
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108008446ad6aa4f0800000000000000
+      internalID: -816719821533083647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_4
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1740
+        width: 200
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81e470eaf23c65f0800000000000000
+      internalID: -762178183843487349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_5
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1740
+        width: 200
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a866bb9cfe87070800000000000000
+      internalID: 8104491179164732000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_6
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1740
+        width: 199
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28d4745dbf668060800000000000000
+      internalID: 6955369533476755502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_7
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1740
+        width: 199
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802844bbf5daf8da0800000000000000
+      internalID: -5940338756803067384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1492
+        width: 201
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f154064f53ea9aac0800000000000000
+      internalID: -3843349260227558113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_9
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1492
+        width: 200
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658f2dd0473304120800000000000000
+      internalID: 2395971575302256726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_10
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1492
+        width: 201
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35deaf85f0af8e10800000000000000
+      internalID: 2202155719345493311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_11
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1492
+        width: 201
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19408cbfa624d70f0800000000000000
+      internalID: -1117664105259858799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_12
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1492
+        width: 201
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d154a78bc66f00eb0800000000000000
+      internalID: -4755530259691322083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_13
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1492
+        width: 201
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe9a622492f3b770800000000000000
+      internalID: 8625504429391126261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_14
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1492
+        width: 202
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821c0568ea3985ea0800000000000000
+      internalID: -5883790535372521176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_15
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1492
+        width: 202
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c1f552c7d1b1a20800000000000000
+      internalID: 3034051193004301377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1244
+        width: 202
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c2984f827268140800000000000000
+      internalID: 4721504316199349255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_17
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1244
+        width: 201
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7cc77b4532c0bb20800000000000000
+      internalID: 3148229673687174266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_18
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1244
+        width: 201
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ad4bdb432c5e9f0800000000000000
+      internalID: -439731856821921157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_19
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1244
+        width: 201
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112c82c608379d930800000000000000
+      internalID: 4168489925515723281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_20
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1244
+        width: 201
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c3377c61e2daae0800000000000000
+      internalID: -1536521222493094873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_21
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1244
+        width: 201
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354886c2b2807ac80800000000000000
+      internalID: -8311665605767297965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_22
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1244
+        width: 201
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e8e2b301d699d60800000000000000
+      internalID: 7897463338050686515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_23
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1244
+        width: 199
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378985dfe1517ea90800000000000000
+      internalID: -7284830649404843917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 996
+        width: 198
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e23b3a691bd18990800000000000000
+      internalID: -7385381011707972892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_25
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 996
+        width: 198
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a96b9cd50d7f2840800000000000000
+      internalID: 5201513558765693345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_26
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 996
+        width: 197
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1adb3e5ff035ccae0800000000000000
+      internalID: -1527754845570482783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_27
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 996
+        width: 197
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5298c78aab6982250800000000000000
+      internalID: 5920147438613334309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_28
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 996
+        width: 196
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c570eb29be585700800000000000000
+      internalID: 529277105614124480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_29
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 996
+        width: 194
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5223f66885383d540800000000000000
+      internalID: 5031509624938770981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_30
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 996
+        width: 194
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5448aa5777b3870800000000000000
+      internalID: 8663649655432955330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_31
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 996
+        width: 193
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98d39448796feb30800000000000000
+      internalID: 4318786532939126938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 748
+        width: 194
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447962bf934490810800000000000000
+      internalID: 1731990547518101316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_33
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 748
+        width: 196
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afd86525ee6eb0d0800000000000000
+      internalID: -3405162337791320152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_34
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 748
+        width: 196
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69ea3a060746ae20800000000000000
+      internalID: 3361452263145662830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_35
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 748
+        width: 197
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7298ee950bacb530800000000000000
+      internalID: 3872157820261012091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_36
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 748
+        width: 198
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa0cc0f3308af9e0800000000000000
+      internalID: -1586814958123087187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_37
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 748
+        width: 198
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9976e11278942d0b0800000000000000
+      internalID: -5705416933199943783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_38
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 748
+        width: 199
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2e983f213292280800000000000000
+      internalID: -9067677810431499540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_39
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 748
+        width: 200
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3246219c5c80d1830800000000000000
+      internalID: 4043397686023578659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 200
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1ebe46db84f3b40800000000000000
+      internalID: 5422132454656565737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_41
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 500
+        width: 200
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d7c4c94bb9217b0800000000000000
+      internalID: -5254966615169270371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_42
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 500
+        width: 200
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b48b79f5c6c6eba0800000000000000
+      internalID: -6059937694983945040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_43
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 500
+        width: 201
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70af31dacc36bbe80800000000000000
+      internalID: -8161820168950646265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_44
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 500
+        width: 201
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ed8584e339c9fd0800000000000000
+      internalID: -2333828611173720440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_45
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 500
+        width: 201
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080c50b11abfb8de0800000000000000
+      internalID: -1329692595596181376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_46
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 500
+        width: 202
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1e1246df8fd6600800000000000000
+      internalID: 463300103879385591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_47
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 500
+        width: 200
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba61f3f8e5cbbb40800000000000000
+      internalID: 5457172977805257393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 252
+        width: 201
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c43c98bfb4c79a0800000000000000
+      internalID: -6234024240467456975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_49
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 252
+        width: 201
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d17f282ae637fb30800000000000000
+      internalID: 4320982746809725396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_50
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 252
+        width: 201
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f37488917c502340800000000000000
+      internalID: 4836967642755789814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_51
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 252
+        width: 201
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6116e9eb1c5c067b0800000000000000
+      internalID: -5232965331087105770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_52
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 252
+        width: 202
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e2016aa6638c910800000000000000
+      internalID: 1857794677970841171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_53
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 252
+        width: 201
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247c9fd1629c427a0800000000000000
+      internalID: -6402771604665153726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_54
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 252
+        width: 201
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2e1c02a031a6030800000000000000
+      internalID: 3488621795572048585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_55
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 252
+        width: 199
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49e2574660825c10800000000000000
+      internalID: 2040834757923891535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_56
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 200
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a23beb1cbe715450800000000000000
+      internalID: 6075776718686859936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_57
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 4
+        width: 200
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c88eb5110b5c040800000000000000
+      internalID: 4667330177442286697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_58
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 4
+        width: 200
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d3601da24ab57b0800000000000000
+      internalID: -5234409638085640847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_59
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 4
+        width: 200
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cc2d4bb587eae50800000000000000
+      internalID: 6822522820783950876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_60
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 3
+        width: 200
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004b1639c62533560800000000000000
+      internalID: 7292262847925564416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ants_61
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 2
+        width: 200
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015a5f10a5e362fc0800000000000000
+      internalID: -3520057502442609392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ants_0: 6441768536954367968
+      ants_1: -3891608868525927020
+      ants_10: 2202155719345493311
+      ants_11: -1117664105259858799
+      ants_12: -4755530259691322083
+      ants_13: 8625504429391126261
+      ants_14: -5883790535372521176
+      ants_15: 3034051193004301377
+      ants_16: 4721504316199349255
+      ants_17: 3148229673687174266
+      ants_18: -439731856821921157
+      ants_19: 4168489925515723281
+      ants_2: -3529049480373552548
+      ants_20: -1536521222493094873
+      ants_21: -8311665605767297965
+      ants_22: 7897463338050686515
+      ants_23: -7284830649404843917
+      ants_24: -7385381011707972892
+      ants_25: 5201513558765693345
+      ants_26: -1527754845570482783
+      ants_27: 5920147438613334309
+      ants_28: 529277105614124480
+      ants_29: 5031509624938770981
+      ants_3: -816719821533083647
+      ants_30: 8663649655432955330
+      ants_31: 4318786532939126938
+      ants_32: 1731990547518101316
+      ants_33: -3405162337791320152
+      ants_34: 3361452263145662830
+      ants_35: 3872157820261012091
+      ants_36: -1586814958123087187
+      ants_37: -5705416933199943783
+      ants_38: -9067677810431499540
+      ants_39: 4043397686023578659
+      ants_4: -762178183843487349
+      ants_40: 5422132454656565737
+      ants_41: -5254966615169270371
+      ants_42: -6059937694983945040
+      ants_43: -8161820168950646265
+      ants_44: -2333828611173720440
+      ants_45: -1329692595596181376
+      ants_46: 463300103879385591
+      ants_47: 5457172977805257393
+      ants_48: -6234024240467456975
+      ants_49: 4320982746809725396
+      ants_5: 8104491179164732000
+      ants_50: 4836967642755789814
+      ants_51: -5232965331087105770
+      ants_52: 1857794677970841171
+      ants_53: -6402771604665153726
+      ants_54: 3488621795572048585
+      ants_55: 2040834757923891535
+      ants_56: 6075776718686859936
+      ants_57: 4667330177442286697
+      ants_58: -5234409638085640847
+      ants_59: 6822522820783950876
+      ants_6: 6955369533476755502
+      ants_60: 7292262847925564416
+      ants_61: -3520057502442609392
+      ants_7: -5940338756803067384
+      ants_8: -3843349260227558113
+      ants_9: 2395971575302256726
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
