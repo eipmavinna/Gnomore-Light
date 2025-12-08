@@ -1,5 +1,7 @@
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HudManagerScript : MonoBehaviour
 {
@@ -25,9 +27,11 @@ public class HudManagerScript : MonoBehaviour
     float timeRemaining;
     float timeBarWidth;
     float lastUpdateTime;
+    bool gameOver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        gameOver = false;
         levelCompleteOverlay.gameObject.SetActive(false);
         pauseOverlay.gameObject.SetActive(false);
 
@@ -67,6 +71,10 @@ public class HudManagerScript : MonoBehaviour
         //TODO update time remaining and bugs collected
         bugsCollectedText.text = "Bugs Collected: " + bugsCollected;
         timeRemainingText.text = "Time Remaining: " + Mathf.CeilToInt(timeRemaining) + "s";
+
+        string currentLevel = PlayerPrefs.GetString("CurrentLevel", "");
+        PlayerPrefs.SetInt(currentLevel + "BestBugs", bugsCollected);
+        PlayerPrefs.SetFloat(currentLevel + "BestTime", timeLimit-timeRemaining);
         Invoke("ReturnToMap", 5f);
     }
 
@@ -74,6 +82,11 @@ public class HudManagerScript : MonoBehaviour
     //called if player dies
     public void DisplayDeathOverlay(string message)
     {
+        if (gameOver)
+        {
+            return;
+        }
+        gameOver = true;
         string[] deathMessages = { "You died!", "Wasted" };
         int index = Random.Range(0, deathMessages.Length);
 
@@ -87,7 +100,7 @@ public class HudManagerScript : MonoBehaviour
    
     public void ReturnToMap()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MapScene");
+        SceneManager.LoadScene("MapScene");
     }
 
 
@@ -110,7 +123,7 @@ public class HudManagerScript : MonoBehaviour
             return;
         }
 
-            float deltaTime = Time.time - lastUpdateTime;
+        float deltaTime = Time.time - lastUpdateTime;
         timeRemaining -= deltaTime;
         if (timeRemaining <= 0)
         {
