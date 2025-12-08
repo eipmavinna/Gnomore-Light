@@ -62,10 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MapButtonScript.cs" />
+    <Compile Include="Assets\Scripts\AntScript.cs" />
     <Compile Include="Assets\Scripts\TitleSceneManagerScript.cs" />
     <Compile Include="Assets\Scripts\ButtonScript.cs" />
     <Compile Include="Assets\Scripts\BoatScript.cs" />
     <Compile Include="Assets\Scripts\HudManagerScript.cs" />
+    <Compile Include="Assets\Scripts\splineScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\MapSceneManagerScript.cs" />
     <Compile Include="Assets\Scripts\MoleScript.cs" />
@@ -1136,6 +1138,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Splines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Splines.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1320,16 +1326,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Collections.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
@@ -1346,6 +1352,14 @@
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Settings.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>Library\ScriptAssemblies\Unity.Splines.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.UI">

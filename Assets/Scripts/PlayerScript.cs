@@ -128,7 +128,8 @@ public class PlayerScript : MonoBehaviour
         if (
             collision.gameObject.CompareTag("Enemy") ||
             collision.gameObject.CompareTag("Mole") ||
-            collision.gameObject.CompareTag("Squirrel")
+            collision.gameObject.CompareTag("Squirrel") ||
+            collision.gameObject.CompareTag("Ant")
             )
         {
             Die(collision.gameObject.tag);

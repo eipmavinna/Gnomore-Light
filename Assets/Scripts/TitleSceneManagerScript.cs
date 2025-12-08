@@ -6,7 +6,16 @@ public class TitleSceneManagerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        string bugsLoaded = PlayerPrefs.GetString("BugsLoaded", "");
+        string[] bugs = bugsLoaded.Split(';');
+        foreach (var item in bugs)
+        {
+            PlayerPrefs.SetInt(item, 0);
+        }
+        PlayerPrefs.SetInt("MapTotalBugs", 0);
+        PlayerPrefs.SetInt("BugsCollected", 0);
+        PlayerPrefs.SetInt("TotalBugs", 1);
+
     }
 
     // Update is called once per frame
@@ -16,8 +25,7 @@ public class TitleSceneManagerScript : MonoBehaviour
     }
     public void OnStartButtonClicked()
     {
-        PlayerPrefs.SetInt("MapTotalBugs", 0);
-        PlayerPrefs.SetInt("TotalBugs", 1);
+        
         //Debug.Log("Total: " + PlayerPrefs.GetInt("TotalBugs").ToString());
         SceneManager.LoadScene("TutorialScene");
     }
