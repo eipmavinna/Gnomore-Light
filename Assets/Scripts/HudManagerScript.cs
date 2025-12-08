@@ -1,5 +1,7 @@
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HudManagerScript : MonoBehaviour
 {
@@ -25,9 +27,11 @@ public class HudManagerScript : MonoBehaviour
     float timeRemaining;
     float timeBarWidth;
     float lastUpdateTime;
+    bool gameOver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        gameOver = false;
         levelCompleteOverlay.gameObject.SetActive(false);
         pauseOverlay.gameObject.SetActive(false);
 
@@ -64,6 +68,9 @@ public class HudManagerScript : MonoBehaviour
         gameOverlay.gameObject.SetActive(false);
         levelCompleteOverlay.gameObject.SetActive(true);
 
+        string scene = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetInt(scene, Mathf.Max(bugsCollected, PlayerPrefs.GetInt(scene,0)));
+
         //TODO update time remaining and bugs collected
         bugsCollectedText.text = "Bugs Collected: " + bugsCollected;
         timeRemainingText.text = "Time Remaining: " + Mathf.CeilToInt(timeRemaining) + "s";
@@ -74,6 +81,11 @@ public class HudManagerScript : MonoBehaviour
     //called if player dies
     public void DisplayDeathOverlay(string message)
     {
+        if (gameOver)
+        {
+            return;
+        }
+        gameOver = true;
         string[] deathMessages = { "You died!", "Wasted" };
         int index = Random.Range(0, deathMessages.Length);
 
@@ -110,7 +122,7 @@ public class HudManagerScript : MonoBehaviour
             return;
         }
 
-            float deltaTime = Time.time - lastUpdateTime;
+        float deltaTime = Time.time - lastUpdateTime;
         timeRemaining -= deltaTime;
         if (timeRemaining <= 0)
         {
