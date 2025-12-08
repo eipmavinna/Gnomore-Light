@@ -68,12 +68,13 @@ public class HudManagerScript : MonoBehaviour
         gameOverlay.gameObject.SetActive(false);
         levelCompleteOverlay.gameObject.SetActive(true);
 
-        string scene = SceneManager.GetActiveScene().name;
-        PlayerPrefs.SetInt(scene, Mathf.Max(bugsCollected, PlayerPrefs.GetInt(scene,0)));
-
         //TODO update time remaining and bugs collected
         bugsCollectedText.text = "Bugs Collected: " + bugsCollected;
         timeRemainingText.text = "Time Remaining: " + Mathf.CeilToInt(timeRemaining) + "s";
+
+        string currentLevel = PlayerPrefs.GetString("CurrentLevel", "");
+        PlayerPrefs.SetInt(currentLevel + "BestBugs", bugsCollected);
+        PlayerPrefs.SetFloat(currentLevel + "BestTime", timeLimit-timeRemaining);
         Invoke("ReturnToMap", 5f);
     }
 
@@ -99,7 +100,7 @@ public class HudManagerScript : MonoBehaviour
    
     public void ReturnToMap()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MapScene");
+        SceneManager.LoadScene("MapScene");
     }
 
 
