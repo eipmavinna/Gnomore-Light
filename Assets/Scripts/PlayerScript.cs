@@ -86,7 +86,7 @@ public class PlayerScript : MonoBehaviour
 
         //Animator code
         float moveDelta = 0.3f;
-        _animator.SetBool("Moving", (Mathf.Abs(_rbody.linearVelocity.magnitude) >= 0.005f));
+        _animator.SetBool("Moving", (Mathf.Abs(_rbody.linearVelocity.magnitude) >= 0.05f));
         //if(SceneName != "MoleHoleScene")
         if(!verticalMove.enabled)
         {
