@@ -81,7 +81,7 @@ public class PlayerScript : MonoBehaviour
         {
             lastTimeGrounded = Time.time;
             jumpsLeft = 0;
-            //TODO: disable gliding once grounded?
+            DisableGliding();
         }
 
         //Animator code
@@ -268,6 +268,7 @@ public class PlayerScript : MonoBehaviour
 
     public void EnableGliding()
     {
+        if (isGliding) { return; }
         isGliding = true;
         initialGScale /= 4; //Update initial G scale for proper climbing interaction
         _rbody.gravityScale = initialGScale;
@@ -276,6 +277,7 @@ public class PlayerScript : MonoBehaviour
 
     public void DisableGliding()
     {
+        if (!isGliding) { return; }
         isGliding = false;
         initialGScale *= 4; //resetting gravity scale to original value
         _rbody.gravityScale = initialGScale;
@@ -305,6 +307,10 @@ public class PlayerScript : MonoBehaviour
         verticalDirection = direction;
     }
 
+    void OnGlide(InputValue button)
+    {
+        ToggleGliding();
+    }
 
     void OnJump(InputValue button)
     {
