@@ -28,6 +28,7 @@ public class HudManagerScript : MonoBehaviour
     float timeBarWidth;
     float lastUpdateTime;
     bool gameOver;
+    bool died = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -73,8 +74,15 @@ public class HudManagerScript : MonoBehaviour
         timeRemainingText.text = "Time Remaining: " + Mathf.CeilToInt(timeRemaining) + "s";
 
         string currentLevel = PlayerPrefs.GetString("CurrentLevel", "");
-        PlayerPrefs.SetInt(currentLevel + "BestBugs", bugsCollected);
-        PlayerPrefs.SetFloat(currentLevel + "BestTime", timeLimit-timeRemaining);
+
+        if (!died)
+        {
+            int prevBestBugs = PlayerPrefs.GetInt(currentLevel + "BugsBest", 0);
+            float prevBestTime = PlayerPrefs.GetFloat(currentLevel + "TimeBest", 0);
+
+            PlayerPrefs.SetInt(currentLevel + "BugsBest", Mathf.Max(prevBestBugs, bugsCollected));
+            PlayerPrefs.SetFloat(currentLevel + "TimeBest", Mathf.Max(prevBestTime, timeLimit - timeRemaining));
+        }
         Invoke("ReturnToMap", 5f);
     }
 
@@ -94,6 +102,7 @@ public class HudManagerScript : MonoBehaviour
         levelCompleteText.color = new Color(0.6981132f, 0.059131f, 0);
         deathMessageText.text = "Cause of Death: " + message;
 
+        died = true;
         DisplayLevelCompleteOverlay();
     }
 
