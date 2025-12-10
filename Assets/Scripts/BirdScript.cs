@@ -17,6 +17,7 @@ public class BirdScript : MonoBehaviour
     public float chaseSpeed = 4.0f; // Speed while chasing the player
     public GameObject player;
 
+    public LayerMask birdWall;
     Vector2 home;
     Vector2 _moveDirection;
     bool facingRight = true;
@@ -99,11 +100,11 @@ public class BirdScript : MonoBehaviour
     void Patrol()
     {
         //Change direction if hitting a wall
-        RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position + _moveDirection, _moveDirection, 0.1f);
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position + _moveDirection, _moveDirection, 0.1f, birdWall);
         if (hit.collider != null)
         {
             _moveDirection = -_moveDirection;
-            //Flip();
+            Flip();
         }
     }
 

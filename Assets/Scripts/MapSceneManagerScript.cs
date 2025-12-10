@@ -21,6 +21,8 @@ public class MapSceneManagerScript : MonoBehaviour
     {
         //Add levels up here (id [Scene Name], name, bugs required)
         LevelData.addLevel("TheWoodsScene","The Woods",10);
+        LevelData.addLevel("CliffScene", "The Cliffs", 10);
+
 
 
         showInstructions(true);

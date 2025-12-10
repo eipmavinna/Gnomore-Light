@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3891533517479164197}
   - component: {fileID: 311551821421842679}
   - component: {fileID: 2759285027379994849}
-  - component: {fileID: 7033632203614597589}
   - component: {fileID: 4616742657314719991}
   m_Layer: 9
   m_Name: Ant
@@ -167,18 +166,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7033632203614597589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565667438739101272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d00817509faa64e82c3c1e7eefb3fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AntScript
 --- !u!61 &4616742657314719991
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -131,7 +131,8 @@ public class PlayerScript : MonoBehaviour
             collision.gameObject.CompareTag("Enemy") ||
             collision.gameObject.CompareTag("Mole") ||
             collision.gameObject.CompareTag("Squirrel") ||
-            collision.gameObject.CompareTag("Ant")
+            collision.gameObject.CompareTag("Ant") ||
+            collision.gameObject.CompareTag("Bird")
             )
         {
             Die(collision.gameObject.tag);
@@ -274,7 +275,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (isGliding) { return; }
         isGliding = true;
-        initialGScale /= 4; //Update initial G scale for proper climbing interaction
+        initialGScale /= 5; //Update initial G scale for proper climbing interaction
         _rbody.gravityScale = initialGScale;
         _animator.SetBool("Gliding", true);
     }
@@ -283,7 +284,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (!isGliding) { return; }
         isGliding = false;
-        initialGScale *= 4; //resetting gravity scale to original value
+        initialGScale *= 5; //resetting gravity scale to original value
         _rbody.gravityScale = initialGScale;
         _animator.SetBool("Gliding", false);
     }
