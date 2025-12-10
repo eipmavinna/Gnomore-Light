@@ -26,6 +26,7 @@ public class HudManagerScript : MonoBehaviour
     int totalBugs;
     float timeRemaining;
     float timeBarWidth;
+    RectTransform timeBarTransform;
     float lastUpdateTime;
     bool gameOver;
     bool died = false;
@@ -38,7 +39,8 @@ public class HudManagerScript : MonoBehaviour
 
         playerScript = FindAnyObjectByType<PlayerScript>();
         lastUpdateTime = Time.time;
-        timeBarWidth = timeTracker.transform.localScale.x;
+        timeBarTransform = timeTracker.GetComponent<RectTransform>();
+        timeBarWidth = timeBarTransform.localPosition.x;
 
         //retrieving game data to show on the current scene
         if (PlayerPrefs.GetInt("InLevel", 0) == 0)
@@ -83,7 +85,7 @@ public class HudManagerScript : MonoBehaviour
             PlayerPrefs.SetInt(currentLevel + "BugsBest", Mathf.Max(prevBestBugs, bugsCollected));
             PlayerPrefs.SetFloat(currentLevel + "TimeBest", Mathf.Max(prevBestTime, timeLimit - timeRemaining));
         }
-        Invoke("ReturnToMap", 5f);
+        Invoke("ReturnToMap", 3.5f);
     }
 
 
@@ -141,7 +143,8 @@ public class HudManagerScript : MonoBehaviour
         }
         lastUpdateTime = Time.time;
         PlayerPrefs.SetFloat("TimeRemaining", timeRemaining);
-        timeTracker.transform.localScale = new Vector3((timeRemaining / timeLimit) * timeBarWidth, 1, 1);
+        Vector3 position = timeBarTransform.localPosition;
+        timeBarTransform.localPosition = new Vector3((timeRemaining/timeLimit) * timeBarWidth, position.y, position.z);
     }
 
     void UpdateBugTracker()
