@@ -83,7 +83,7 @@ public class HudManagerScript : MonoBehaviour
             float prevBestTime = PlayerPrefs.GetFloat(currentLevel + "TimeBest", 0);
 
             PlayerPrefs.SetInt(currentLevel + "BugsBest", Mathf.Max(prevBestBugs, bugsCollected));
-            PlayerPrefs.SetFloat(currentLevel + "TimeBest", Mathf.Max(prevBestTime, timeLimit - timeRemaining));
+            PlayerPrefs.SetFloat(currentLevel + "TimeBest", Mathf.Min(prevBestTime, timeLimit - timeRemaining));
         }
         Invoke("ReturnToMap", 3.5f);
     }
