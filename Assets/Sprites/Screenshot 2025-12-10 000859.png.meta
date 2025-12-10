@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 68b980e4cecd7b4439180bd212119e4b
+guid: a0a40f52492b5be458a8fc71285b8430
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6554336949514335307
-    second: cliffWallCollider2_0
-  - first:
-      213: 2862248817295887007
-    second: cliffWallCollider2_1
-  - first:
-      213: 6490899322878172021
-    second: cliffWallCollider2_2
-  - first:
-      213: -4356433343854786060
-    second: cliffWallCollider2_3
+      213: 1913140668616070361
+    second: Screenshot 2025-12-10 000859_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cliffWallCollider2_0
+      name: Screenshot 2025-12-10 000859_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 1212
-        width: 212
-        height: 179
+        x: 0
+        y: 0
+        width: 97
+        height: 238
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b44f40eaabea5fa50800000000000000
-      internalID: 6554336949514335307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cliffWallCollider2_1
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 567
-        width: 38
-        height: 567
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9a04bd6220c8b720800000000000000
-      internalID: 2862248817295887007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cliffWallCollider2_2
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 254
-        width: 44
-        height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57b1afc3b8e441a50800000000000000
-      internalID: 6490899322878172021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cliffWallCollider2_3
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 23
-        width: 266
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f94ed384f6da83c0800000000000000
-      internalID: -4356433343854786060
+      spriteID: 9d4d6364d47dc8a10800000000000000
+      internalID: 1913140668616070361
       vertices: []
       indices: 
       edges: []
@@ -200,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cliffWallCollider2_0: 6554336949514335307
-      cliffWallCollider2_1: 2862248817295887007
-      cliffWallCollider2_2: 6490899322878172021
-      cliffWallCollider2_3: -4356433343854786060
+      Screenshot 2025-12-10 000859_0: 1913140668616070361
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
