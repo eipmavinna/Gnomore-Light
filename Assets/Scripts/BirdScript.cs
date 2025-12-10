@@ -15,6 +15,7 @@ public class BirdScript : MonoBehaviour
     public float followDistance = 7.0f; // Distance at which the bird stops following the player
     public float patrolSpeed = 2.0f; // Speed while patrolling
     public float chaseSpeed = 4.0f; // Speed while chasing the player
+    public AudioClip screech;
     public GameObject player;
 
     public LayerMask birdWall;
@@ -23,12 +24,14 @@ public class BirdScript : MonoBehaviour
     bool facingRight = true;
     BirdState currentState = BirdState.Patrolling;
     Rigidbody2D _rbody;
+    AudioSource _audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         home = transform.position;
         _rbody = GetComponent<Rigidbody2D>();
+        _audioSource = GetComponent<AudioSource>();
         _moveDirection = Vector2.right; // Initial move direction
     }
 
@@ -42,6 +45,7 @@ public class BirdScript : MonoBehaviour
                 if (Vector2.Distance(home, player.transform.position) < aggroDistance)
                 {
                     currentState = BirdState.Aggressive;
+                    _audioSource.PlayOneShot(screech);
                 }
                 break;
             case BirdState.Aggressive:
