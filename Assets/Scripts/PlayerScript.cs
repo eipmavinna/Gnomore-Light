@@ -30,7 +30,8 @@ public class PlayerScript : MonoBehaviour
     float jumpCooldown;
     float lastTimeJumped = 0;
     float jumpsLeft = 1;
-    float maxFallspeed = 4f; //Used for gliding
+    float maxFallSpeedGliding = 4f; //Used for gliding
+    float maxFallSpeed = 40f;
     public float fallAllowance;
     public float jumpForce;
     public bool sceneEnabledVerticalMove = false;
@@ -116,9 +117,10 @@ public class PlayerScript : MonoBehaviour
         }
 
         //Max fall speed when gliding
-        if (isGliding && Mathf.Abs(_rbody.linearVelocityY) > maxFallspeed)
+        float maxFall = isGliding ? maxFallSpeedGliding : maxFallSpeed;
+        if (Mathf.Abs(_rbody.linearVelocityY) > maxFall)
         {
-            _rbody.linearVelocityY = Mathf.Sign(_rbody.linearVelocityY) * maxFallspeed;
+            _rbody.linearVelocityY = Mathf.Sign(_rbody.linearVelocityY) * maxFall;
         }
     }
 
@@ -237,6 +239,8 @@ public class PlayerScript : MonoBehaviour
         LockMovement();
         _spriteRenderer.enabled = false;
         _collider.enabled = false;
+        _rbody.gravityScale = 0;
+       
         _deathParticles.Play();
         _hudManager.DisplayDeathOverlay(reason);
     }
