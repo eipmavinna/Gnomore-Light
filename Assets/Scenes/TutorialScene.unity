@@ -6786,7 +6786,7 @@ MonoBehaviour:
   buttonIconSprite: {fileID: 0}
   isTmpText: 1
   text: {fileID: 166370425}
-  btnText: you can leave once enough bugs are collected
+  btnText: the boat will leave once the bug requirement is met
 --- !u!212 &1648489394
 SpriteRenderer:
   m_ObjectHideFlags: 0
