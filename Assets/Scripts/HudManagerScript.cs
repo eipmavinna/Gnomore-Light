@@ -136,7 +136,7 @@ public class HudManagerScript : MonoBehaviour
 
         float deltaTime = Time.time - lastUpdateTime;
         timeRemaining -= deltaTime;
-        if (timeRemaining <= 0)
+        if (timeRemaining <= 0 && !gameOver)
         {
             timeRemaining = 0;
             playerScript.Die("Darkness");

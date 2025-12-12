@@ -38,6 +38,7 @@ public class PlayerScript : MonoBehaviour
     public AudioClip step;
 
     float lastStepSoundPlayed = 0;
+    bool alive = true;
 
     string buttonName;
 
@@ -136,6 +137,12 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!alive)
+        {
+            verticalDirection = 0;
+            horizontalDirection = 0;
+        }
+
         //basic player movement
         _rbody.linearVelocityX = horizontalDirection * moveSpeed;
 
@@ -265,6 +272,8 @@ public class PlayerScript : MonoBehaviour
     //Player death logic
     public void Die(string reason)
     {
+        if (!alive) { return; }
+        alive = false;
         LockMovement();
         _spriteRenderer.enabled = false;
         _collider.enabled = false;
