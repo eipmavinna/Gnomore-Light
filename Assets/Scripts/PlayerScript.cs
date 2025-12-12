@@ -122,11 +122,10 @@ public class PlayerScript : MonoBehaviour
         //if(SceneName != "MoleHoleScene")
         if(!verticalMove.enabled)
         {
-            if (!IsGrounded())
-            {
-                _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
-                _animator.SetBool("Falling", _rbody.linearVelocityY <= -moveDelta);
-            }
+            _animator.SetBool("Grounded", IsGrounded());
+            _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
+            _animator.SetBool("Falling", _rbody.linearVelocityY <= -moveDelta);
+            
         }
 
         if (horizontalDirection < 0 && facingRight)
@@ -191,6 +190,10 @@ public class PlayerScript : MonoBehaviour
             //store the name of the button's scene in case the player interacts with it
             buttonName = collision.gameObject.name;
         }
+        else if (collision.gameObject.CompareTag("Ladder"))
+        {
+            _animator.SetBool("Climbing", true);
+        }
 
     }
 
@@ -200,7 +203,6 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Ladder"))
         {
             DisableGliding();
-            _animator.SetBool("Climbing", true);
             _rbody.gravityScale = 4;
             verticalMove.Enable();
             //TODO: climbing animation

@@ -540,8 +540,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fae60c202630cb14792df0eb3e8cd523, type: 2}
+  m_sharedMaterial: {fileID: 1945925874808241494, guid: fae60c202630cb14792df0eb3e8cd523, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1713,6 +1713,18 @@ PrefabInstance:
     - target: {fileID: 3134476299830410114, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
       propertyPath: m_Name
       value: Hud
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374788463029788643, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_fontSize
+      value: 21.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374788463029788643, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1945925874808241494, guid: fae60c202630cb14792df0eb3e8cd523, type: 2}
+    - target: {fileID: 3374788463029788643, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4046454574750597360, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3440,7 +3452,7 @@ MonoBehaviour:
   buttonIconSprite: {fileID: 0}
   isTmpText: 1
   text: {fileID: 166370425}
-  btnText: don't run out of time!
+  btnText: track time left by watching the moon
 --- !u!212 &824383968
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3508,8 +3520,8 @@ Transform:
   m_GameObject: {fileID: 824383966}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.51, y: -3.49, z: 0}
-  m_LocalScale: {x: 9.660694, y: 2.9823, z: 1}
+  m_LocalPosition: {x: -1.219, y: -3.49, z: 0}
+  m_LocalScale: {x: 15.118987, y: 2.9823, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8339,7 +8351,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: d5ee403a781a3c94096fd9c018931494, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
