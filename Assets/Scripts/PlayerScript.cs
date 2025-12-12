@@ -61,6 +61,7 @@ public class PlayerScript : MonoBehaviour
         verticalMove = playerInput.actions["VerticalMove"];
         jump = playerInput.actions["Jump"];
         jumpCooldown = fallAllowance;
+        InputAction glide = playerInput.actions["Glide"];
 
         //Only allow vertical movement in the mole hole scene
         sceneName = SceneManager.GetActiveScene().name;
@@ -70,8 +71,9 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            //if in a top-down level, player shouldn't be able to jump
+            //if in a top-down level, player shouldn't be able to jump or glide
             jump.Disable();
+            glide.Disable();
         }
     }
 
@@ -159,9 +161,10 @@ public class PlayerScript : MonoBehaviour
         //allow player to climb ladders
         if (collision.gameObject.CompareTag("Ladder"))
         {
+            DisableGliding();
             _rbody.gravityScale = 4;
             verticalMove.Enable();
-            //TODO: gliding be disabled while on ladder?
+            //TODO: climbing animation
         }
 
     }
@@ -173,6 +176,7 @@ public class PlayerScript : MonoBehaviour
         {
             _rbody.gravityScale = initialGScale;
             verticalMove.Disable();
+            //TODO: exit climb animation
         }
         else if (collision.gameObject.CompareTag("button"))
         {

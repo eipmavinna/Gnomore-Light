@@ -132,7 +132,12 @@ public class MapSceneManagerScript : MonoBehaviour
 
         public string GetBestTime()
         {
-            return FormatTime(PlayerPrefs.GetFloat(levelId + "TimeBest", 0));
+            float bestTime = PlayerPrefs.GetFloat(levelId + "TimeBest", 99999);
+            if(bestTime == 99999)
+            {
+                bestTime = 0;
+            }
+            return FormatTime(bestTime);
         }
 
         public void LoadLevel()
