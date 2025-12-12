@@ -16,7 +16,12 @@ public class BirdScript : MonoBehaviour
     public float patrolSpeed = 2.0f; // Speed while patrolling
     public float chaseSpeed = 4.0f; // Speed while chasing the player
     public AudioClip screech;
+    public float maxVolume = 1f;
+    public float minDistance = 3f;
+    public float maxDistance = 9f;
+    public float minY;
     public GameObject player;
+    AudioSource audioSource;
 
     public LayerMask birdWall;
     Vector2 home;
@@ -33,16 +38,22 @@ public class BirdScript : MonoBehaviour
         _rbody = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
         _moveDirection = Vector2.right; // Initial move direction
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(player == null)
+        {
+            ReturnHome();
+            return;
+        }
         switch (currentState)
         {
             case BirdState.Patrolling:
                 Patrol();
-                if (Vector2.Distance(home, player.transform.position) < aggroDistance)
+                if (Vector2.Distance(transform.position, player.transform.position) < aggroDistance)
                 {
                     currentState = BirdState.Aggressive;
                     _audioSource.PlayOneShot(screech);
@@ -50,9 +61,8 @@ public class BirdScript : MonoBehaviour
                 break;
             case BirdState.Aggressive:
                 ChasePlayer();
-                if (Vector2.Distance(transform.position, home) > followDistance ||
-                    Vector2.Distance(transform.position, player.transform.position) > followDistance
-
+                if (Vector2.Distance(transform.position, player.transform.position) > followDistance ||
+                    transform.position.y < minY
                     )
                 {
                     currentState = BirdState.ReturningHome;
@@ -67,6 +77,24 @@ public class BirdScript : MonoBehaviour
                 }
                 break;
         }
+
+        float dist = Vector3.Distance(player.transform.position, transform.position);
+
+        if (dist <= minDistance)
+        {
+            audioSource.volume = maxVolume;
+        }
+        else if (dist >= maxDistance)
+        {
+            audioSource.volume = 0f;
+        }
+        else
+        {
+            float t = (dist - minDistance) / (maxDistance - minDistance);
+            audioSource.volume = Mathf.Lerp(maxVolume, 0f, t);
+        }
+
+
     }
 
     private void FixedUpdate()
