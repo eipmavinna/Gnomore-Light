@@ -38,6 +38,7 @@ public class PlayerScript : MonoBehaviour
     public AudioClip step;
 
     float lastStepSoundPlayed = 0;
+    float climbAnimSpeed = 0.5f;
 
     string buttonName;
 
@@ -93,9 +94,10 @@ public class PlayerScript : MonoBehaviour
             lastTimeGrounded = Time.time;
             jumpsLeft = 0;
             DisableGliding();
+            
 
         }
-        
+
         if (IsGrounded() || !jump.enabled)
         {
             if (verticalDirection == 0 && horizontalDirection == 0)
@@ -121,8 +123,11 @@ public class PlayerScript : MonoBehaviour
         //if(SceneName != "MoleHoleScene")
         if(!verticalMove.enabled)
         {
-            _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
-            _animator.SetBool("Falling", _rbody.linearVelocityY <= -moveDelta);
+            if (!IsGrounded())
+            {
+                _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
+                _animator.SetBool("Falling", _rbody.linearVelocityY <= -moveDelta);
+            }
         }
 
         if (horizontalDirection < 0 && facingRight)
@@ -190,6 +195,7 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Ladder"))
         {
             DisableGliding();
+            _animator.SetBool("Climbing", true);
             _rbody.gravityScale = 4;
             verticalMove.Enable();
             //TODO: climbing animation
@@ -204,6 +210,7 @@ public class PlayerScript : MonoBehaviour
         {
             _rbody.gravityScale = initialGScale;
             verticalMove.Disable();
+            _animator.SetBool("Climbing", false);
             //TODO: exit climb animation
         }
         else if (collision.gameObject.CompareTag("button"))

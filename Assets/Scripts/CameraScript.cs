@@ -17,6 +17,8 @@ public class CameraScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Camera cam = GetComponent<Camera>();
+        //cam.orthographicSize = 10f;
 
         sceneName = SceneManager.GetActiveScene().name;
         
@@ -41,7 +43,7 @@ public class CameraScript : MonoBehaviour
         {
             cameraX = stopX;
         }
-        transform.position = new Vector3(cameraX,cameraY + offset, -50);
+        transform.position = new Vector3(cameraX,cameraY + offset, cameraZoom);
 
     }
 }
