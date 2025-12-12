@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(ParticleSystem))]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(AudioSource))]
 
 public class PlayerScript : MonoBehaviour
 {
@@ -17,7 +18,6 @@ public class PlayerScript : MonoBehaviour
     float verticalDirection = 0;
     string sceneName;
     float initialGScale;
-    Animator _animator;
     bool facingRight = true;
     bool isGliding = false;
 
@@ -35,6 +35,9 @@ public class PlayerScript : MonoBehaviour
     public float fallAllowance;
     public float jumpForce;
     public bool sceneEnabledVerticalMove = false;
+    public AudioClip step;
+
+    float lastStepSoundPlayed = 0;
 
     string buttonName;
 
@@ -43,6 +46,8 @@ public class PlayerScript : MonoBehaviour
     SpriteRenderer _spriteRenderer;
     ParticleSystem _deathParticles;
     HudManagerScript _hudManager;
+    AudioSource _audioSource;
+    Animator _animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,6 +58,9 @@ public class PlayerScript : MonoBehaviour
         _collider = GetComponent<BoxCollider2D>();
         _animator = GetComponent<Animator>();
         _hudManager = FindAnyObjectByType<HudManagerScript>();
+        _audioSource = GetComponent<AudioSource>();
+
+        lastStepSoundPlayed = -step.length;
 
         initialGScale = _rbody.gravityScale;  //Store the initial gravity scale so it can be properly restored once the player leaves a ladder
 
@@ -83,6 +91,26 @@ public class PlayerScript : MonoBehaviour
             lastTimeGrounded = Time.time;
             jumpsLeft = 0;
             DisableGliding();
+
+        }
+        
+        if (IsGrounded() || !jump.enabled)
+        {
+            if (verticalDirection == 0 && horizontalDirection == 0)
+            {
+                _audioSource.Stop();
+                lastStepSoundPlayed = -step.length;
+            }
+            else if (Time.time > lastStepSoundPlayed + step.length)
+            {
+                lastStepSoundPlayed = Time.time;
+                _audioSource.PlayOneShot(step);
+            }
+        }
+        else
+        {
+            _audioSource.Stop();
+            lastStepSoundPlayed = -step.length;
         }
 
         //Animator code
