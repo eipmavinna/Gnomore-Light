@@ -41,7 +41,7 @@ public class CameraScript : MonoBehaviour
         {
             cameraX = stopX;
         }
-        transform.position = new Vector3(cameraX,cameraY + offset, -30);
+        transform.position = new Vector3(cameraX,cameraY + offset, -50);
 
     }
 }
