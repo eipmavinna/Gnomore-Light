@@ -13739,7 +13739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2102666301615461625, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 200
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4826417328139668341, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: m_GravityScale
@@ -14141,6 +14141,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 486639487687754057, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2801394531849252420, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -14221,9 +14225,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3022784358297813318, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3134476299830410114, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
       propertyPath: m_Name
       value: Hud
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046454574750597360, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157970299545704846, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759700999173075813, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5181969074769147394, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560577551518354710, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869032582582929934, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998332350877965510, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267766561262017936, guid: f4f0809efdac96e4ba6264bcc7091f93, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
