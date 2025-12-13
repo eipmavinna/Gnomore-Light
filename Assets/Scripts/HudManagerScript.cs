@@ -111,6 +111,7 @@ public class HudManagerScript : MonoBehaviour
    
     public void ReturnToMap()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MapScene");
     }
 
