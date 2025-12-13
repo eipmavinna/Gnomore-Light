@@ -17,8 +17,6 @@ public class CameraScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Camera cam = GetComponent<Camera>();
-        //cam.orthographicSize = 10f;
 
         sceneName = SceneManager.GetActiveScene().name;
         
@@ -33,6 +31,7 @@ public class CameraScript : MonoBehaviour
 
     private void LateUpdate()
     {
+        //have the camera follow the player until the player's x or y is out of bounds
         float cameraY = player.transform.position.y;
         float cameraX = player.transform.position.x;
         if(player.transform.position.y < optionalLowestStopY)

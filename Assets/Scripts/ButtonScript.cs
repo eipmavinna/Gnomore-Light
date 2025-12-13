@@ -7,7 +7,7 @@ public class ButtonScript : MonoBehaviour
     public bool isTmpText;
     public TMP_Text text;
     public string btnText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         
@@ -18,6 +18,8 @@ public class ButtonScript : MonoBehaviour
     {
         
     }
+
+    //show the button image when the player is inside the button trigger
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (!isTmpText)
@@ -36,6 +38,8 @@ public class ButtonScript : MonoBehaviour
             text.text = btnText;
         }
     }
+
+    //make the button invisible again when the player leaves the area
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (!isTmpText)

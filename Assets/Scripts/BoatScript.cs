@@ -16,14 +16,13 @@ public class BoatScript : MonoBehaviour
     public float speed;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rbody = GetComponent<Rigidbody2D>();
         _hudManager = FindAnyObjectByType<HudManagerScript>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (moving)
@@ -40,8 +39,7 @@ public class BoatScript : MonoBehaviour
         int totalBugs = PlayerPrefs.GetInt("TotalBugs", 0);
         if (bugsCollected < totalBugs)
         {
-            //TODO: display message
-            //do not allow the player to leave
+            //do not allow the player to leave if not enough bugs have been collected
             return;
         }
 
@@ -63,9 +61,5 @@ public class BoatScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        //TODO: Hide message
-    }
 
 }

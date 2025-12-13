@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent (typeof(Rigidbody2D))]
 public class MoleScript : MonoBehaviour
 {
-    //
+    
     Rigidbody2D _rbody;
     public float speed;
 
@@ -13,7 +13,6 @@ public class MoleScript : MonoBehaviour
 
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rbody = GetComponent<Rigidbody2D>();
