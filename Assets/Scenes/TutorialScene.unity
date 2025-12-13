@@ -3452,7 +3452,7 @@ MonoBehaviour:
   buttonIconSprite: {fileID: 0}
   isTmpText: 1
   text: {fileID: 166370425}
-  btnText: track time left by watching the moon
+  btnText: remaining time is shown by the moon
 --- !u!212 &824383968
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4617,6 +4617,10 @@ PrefabInstance:
     - target: {fileID: 2102666301615461625, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: m_PointLightOuterRadius
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771631780434421797, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
+      propertyPath: Priority
+      value: 151
       objectReference: {fileID: 0}
     - target: {fileID: 5458740666109418462, guid: 06b1f929a835fa14da5b7f5244445f45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6786,7 +6790,7 @@ MonoBehaviour:
   buttonIconSprite: {fileID: 0}
   isTmpText: 1
   text: {fileID: 166370425}
-  btnText: the boat will leave once the bug requirement is met
+  btnText: the boat will leave once you collect all the bugs
 --- !u!212 &1648489394
 SpriteRenderer:
   m_ObjectHideFlags: 0
