@@ -16,12 +16,15 @@ public class BirdScript : MonoBehaviour
     public float patrolSpeed = 2.0f; // Speed while patrolling
     public float chaseSpeed = 4.0f; // Speed while chasing the player
     public AudioClip screech;
+
+    //audio controlling variables
     public float maxVolume = 1f;
     public float minDistance = 3f;
     public float maxDistance = 9f;
     public float minY;
-    public GameObject player;
     AudioSource audioSource;
+
+    public GameObject player;
 
     public LayerMask birdWall;
     Vector2 home;
@@ -31,9 +34,10 @@ public class BirdScript : MonoBehaviour
     Rigidbody2D _rbody;
     AudioSource _audioSource;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
+        //set the bird default position
         home = transform.position;
         _rbody = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
@@ -49,6 +53,8 @@ public class BirdScript : MonoBehaviour
             ReturnHome();
             return;
         }
+
+        //change the current state based on how close the player is
         switch (currentState)
         {
             case BirdState.Patrolling:
@@ -59,6 +65,7 @@ public class BirdScript : MonoBehaviour
                     _audioSource.PlayOneShot(screech);
                 }
                 break;
+
             case BirdState.Aggressive:
                 ChasePlayer();
                 if (Vector2.Distance(transform.position, player.transform.position) > followDistance ||
@@ -68,6 +75,7 @@ public class BirdScript : MonoBehaviour
                     currentState = BirdState.ReturningHome;
                 }
                 break;
+
             case BirdState.ReturningHome:
                 ReturnHome();
                 if (Vector2.Distance(transform.position, home) < 0.1f)
@@ -77,6 +85,10 @@ public class BirdScript : MonoBehaviour
                 }
                 break;
         }
+
+
+
+        //audio distance controlling
 
         float dist = Vector3.Distance(player.transform.position, transform.position);
 
@@ -99,6 +111,7 @@ public class BirdScript : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //change the bird's behaviour based on the current state
         switch (currentState)
         {
             case BirdState.Patrolling:

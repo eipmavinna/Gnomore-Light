@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour
     public float moveSpeed;
     float horizontalDirection = 0;
     float verticalDirection = 0;
-    string sceneName;
+    
     float initialGScale;
     bool facingRight = true;
     bool isGliding = false;
@@ -30,16 +30,20 @@ public class PlayerScript : MonoBehaviour
     float jumpCooldown;
     float lastTimeJumped = 0;
     float jumpsLeft = 1;
+
     float maxFallSpeedGliding = 4f; //Used for gliding
     float maxFallSpeed = 40f;
     public float fallAllowance;
     public float jumpForce;
+
+    string sceneName;
     public bool sceneEnabledVerticalMove = false;
     public AudioClip step;
 
     float lastStepSoundPlayed = 0;
     bool alive = true;
     string buttonName;
+    
 
     Rigidbody2D _rbody;
     BoxCollider2D _collider;
@@ -49,7 +53,7 @@ public class PlayerScript : MonoBehaviour
     AudioSource _audioSource;
     Animator _animator;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         _rbody = GetComponent<Rigidbody2D>();
@@ -86,6 +90,7 @@ public class PlayerScript : MonoBehaviour
         InputAction esc = playerInput.actions["Pause"];
         if(sceneName == "TutorialScene")
         {
+            //don't allow returning to menu in the tutorial
             esc.Disable();
 
         }
@@ -96,38 +101,41 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         _animator.SetBool("Grounded", IsGrounded());
+
         if (IsGrounded())
         {
+            //jump logic
             lastTimeGrounded = Time.time;
             jumpsLeft = 0;
             DisableGliding();
-            
-
         }
 
         if (IsGrounded() || !jump.enabled)
         {
             if (verticalDirection == 0 && horizontalDirection == 0)
             {
+                //stop the step audio if not moving
                 _audioSource.Stop();
                 lastStepSoundPlayed = -step.length;
             }
             else if (Time.time > lastStepSoundPlayed + step.length)
             {
+                //keep playing the step audio
                 lastStepSoundPlayed = Time.time;
                 _audioSource.PlayOneShot(step);
             }
         }
         else
         {
+            //stop playing audio if not on the ground
             _audioSource.Stop();
             lastStepSoundPlayed = -step.length;
         }
 
+
         //Animator code
         float moveDelta = 0.3f;
         _animator.SetBool("Moving", (Mathf.Abs(_rbody.linearVelocity.magnitude) >= 0.05f));
-        //if(SceneName != "MoleHoleScene")
         if(!verticalMove.enabled)
         {
             _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
@@ -156,7 +164,6 @@ public class PlayerScript : MonoBehaviour
 
         //basic player movement
         _rbody.linearVelocityX = horizontalDirection * moveSpeed;
-
         if (verticalMove.enabled)
         {
             _rbody.linearVelocityY = verticalDirection * moveSpeed;
@@ -212,7 +219,6 @@ public class PlayerScript : MonoBehaviour
             DisableGliding();
             _rbody.gravityScale = 4;
             verticalMove.Enable();
-            //TODO: climbing animation
         }
 
     }
@@ -225,7 +231,6 @@ public class PlayerScript : MonoBehaviour
             _rbody.gravityScale = initialGScale;
             verticalMove.Disable();
             _animator.SetBool("Climbing", false);
-            //TODO: exit climb animation
         }
         else if (collision.gameObject.CompareTag("button"))
         {
@@ -248,6 +253,7 @@ public class PlayerScript : MonoBehaviour
         transform.localScale = theScale;
     }
 
+    //saves the player's position for if they exit to another scene, like going to and from the levels in TreeScene
     public void SavePosition()
     {
         string currentScene = SceneManager.GetActiveScene().name;

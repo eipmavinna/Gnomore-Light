@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -16,7 +14,6 @@ public class SquirrelScript : MonoBehaviour
     public bool goingRight;
     Animator _anim;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rbody = GetComponent<Rigidbody2D>();
