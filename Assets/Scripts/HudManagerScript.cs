@@ -80,7 +80,7 @@ public class HudManagerScript : MonoBehaviour
         if (!died)
         {
             int prevBestBugs = PlayerPrefs.GetInt(currentLevel + "BugsBest", 0);
-            float prevBestTime = PlayerPrefs.GetFloat(currentLevel + "TimeBest", 0);
+            float prevBestTime = PlayerPrefs.GetFloat(currentLevel + "TimeBest", 1000);
 
             PlayerPrefs.SetInt(currentLevel + "BugsBest", Mathf.Max(prevBestBugs, bugsCollected));
             PlayerPrefs.SetFloat(currentLevel + "TimeBest", Mathf.Min(prevBestTime, timeLimit - timeRemaining));
