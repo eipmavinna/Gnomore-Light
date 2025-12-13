@@ -17,7 +17,9 @@ public class MoleScript : MonoBehaviour
     void Start()
     {
         _rbody = GetComponent<Rigidbody2D>();
-        
+        Animator _animator = GetComponent<Animator>();
+        _animator.SetBool("isVert", vertical);
+
     }
 
     // Update is called once per frame
