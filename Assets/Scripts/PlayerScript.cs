@@ -83,11 +83,19 @@ public class PlayerScript : MonoBehaviour
             jump.Disable();
             glide.Disable();
         }
+        InputAction esc = playerInput.actions["Pause"];
+        if(sceneName == "TutorialScene")
+        {
+            esc.Disable();
+
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        _animator.SetBool("Grounded", IsGrounded());
         if (IsGrounded())
         {
             lastTimeGrounded = Time.time;
@@ -122,7 +130,6 @@ public class PlayerScript : MonoBehaviour
         //if(SceneName != "MoleHoleScene")
         if(!verticalMove.enabled)
         {
-            _animator.SetBool("Grounded", IsGrounded());
             _animator.SetBool("Jumping", _rbody.linearVelocityY >= moveDelta);
             _animator.SetBool("Falling", _rbody.linearVelocityY <= -moveDelta);
             
